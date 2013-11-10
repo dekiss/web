@@ -16,23 +16,34 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<div id="content" class="site-content" role="main">
-		<?php if ( have_posts() ) : ?>
-
-			<?php /* The loop */ ?>
-			<?php while ( have_posts() ) : the_post(); ?>
-				<?php get_template_part( 'content', get_post_format() ); ?>
-			<?php endwhile; ?>
-
-			<?php twentythirteen_paging_nav(); ?>
-
-		<?php else : ?>
-			<?php get_template_part( 'content', 'none' ); ?>
-		<?php endif; ?>
-
-		</div><!-- #content -->
-	</div><!-- #primary -->
+<div id="primary" class="content-area">
+    <div id="content" class="site-content" role="main">
+        <article class="blog">
+            <div class="entry-holder content-scroll">
+                    <h1 class="entry-title black bold uppercase">Nebel.tv blog</h1>
+                <div class="entry-content">
+                    <ul class="posts">
+                        <?php while ( have_posts() ) : the_post(); ?>
+                            <li id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+                                <?php nebeltv_entry_date(); ?>
+                                <div class="post-preview">
+                                    <h2 class="post-title greener"><?php the_title(); ?></h2>
+                                    <?php the_content(); ?>
+                                    <?php wp_link_pages( array( 'before' => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'twentythirteen' ) . '</span>', 'after' => '</div>', 'link_before' => '<span>', 'link_after' => '</span>' ) ); ?>
+                                </div><!-- .entry-content -->
+                                <?php if ( has_post_thumbnail() && ! post_password_required() ) : ?>
+                                    <div class="entry-thumbnail">
+                                        <?php the_post_thumbnail(); ?>
+                                    </div>
+                                <?php endif; ?>
+                            </li><!-- #post -->
+                        <?php endwhile; ?>
+                    </ul>
+                </div>
+            </div>
+        </article>
+    </div><!-- #content -->
+</div><!-- #primary -->
 
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>

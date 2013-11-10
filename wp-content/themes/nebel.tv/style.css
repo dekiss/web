@@ -687,6 +687,17 @@ input[type="reset"]:active {
     font-style: normal;
 
 }
+@font-face {
+    font-family: 'open_sansbold';
+    src: url('fonts/opensans_bold_macroman/OpenSans-Bold-webfont.eot');
+    src: url('fonts/opensans_bold_macroman/OpenSans-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+    url('fonts/opensans_bold_macroman/OpenSans-Bold-webfont.woff') format('woff'),
+    url('fonts/opensans_bold_macroman/OpenSans-Bold-webfont.ttf') format('truetype'),
+    url('fonts/opensans_bold_macroman/OpenSans-Bold-webfont.svg#open_sansbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 /*
  * Responsive images
@@ -1084,7 +1095,7 @@ ul.nav-menu li:hover > ul,
 	float: left;
 }
 
-.menu-top-menu-container {
+.menu-top-menu-container, .menu-high-level-container {
 	margin: 27px 0 0 20px;
 }
 
@@ -1158,7 +1169,7 @@ ul.nav-menu li:hover > ul,
 
 .entry-thumbnail img {
 	display: block;
-	margin: 0 auto 10px;
+	/*margin: 0 auto 10px;*/
 }
 
 .entry-header {
@@ -3385,6 +3396,18 @@ footer.entry-meta {
     color: #bfd092;
 }
 
+.greener {
+    color: #8ca156;
+}
+
+.bold {
+    font-family: open_sansbold;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
 .white {
     color: #fff;
 }
@@ -3552,4 +3575,103 @@ article.slice {
     padding-top: 20px;
 }
 
+.about {
 
+}
+.entry-title {
+    font-size: 31px;
+    font-family: open_sansregular;
+}
+
+.entry-holder {
+    width: 1000px;
+    margin: 0 auto;
+    background: url('images/entry-holder-bg.png') repeat;
+    border-radius: 20px;
+    padding: 40px;
+    -webkit-box-shadow: 0px 1px 0px #9f7d68, inset 0px -1px 0px #2d221a;
+    -moz-box-shadow:    0px 1px 0px #9f7d68, inset 0px -1px 0px #2d221a;
+    box-shadow:         0px 1px 0px #9f7d68, inset 0px -1px 0px #2d221a;
+}
+
+.blog h1 {
+    font-size: 22px;
+    padding-left: 140px;
+    color: #37271d;
+    font-family: open_sansbold;
+}
+
+.blog .posts {
+    list-style: none;
+    padding-left: 0;
+}
+.blog .posts li {
+    overflow: hidden;
+}
+
+.blog .posts time {
+    background: url('images/post-date-bg.png') no-repeat left top;
+    display: inline-block;
+    width: 116px;
+    height: 116px;
+    color: #616f3e;
+    text-align: center;
+    float: left;
+}
+
+.blog .posts time .day {
+    font-size: 46px;
+    line-height: 1.7em;
+}
+.blog .posts time .month {
+    margin-top: -22px;
+    float: left;
+    width: 100%;
+    text-transform: lowercase;
+    font-size: 16px;
+}
+.blog .posts time .year {
+    font-size: 14px;
+    float: left;
+    width: 100%;
+    margin-top: -25px;
+}
+
+.blog .posts .post-preview {
+    float: left;
+    margin-left: 30px;
+    width: 650px;
+}
+.blog .posts .post-preview p {
+    font-size: 14px;
+}
+
+.blog .posts .entry-thumbnail {
+    height: 116px;
+    width: 116px;
+    float: right;
+    border-radius: 50%;
+    border: 9px solid #a2b375;
+    overflow: hidden;
+}
+
+.post-title {
+    font-weight: normal;
+    margin: 0 0 10px;
+    font-size: 27px;
+}
+
+.content-scroll {
+    max-height: 590px;
+    min-height: 590px;
+    height: 590px;
+}
+
+.content-scroll.entry-holder {
+    padding-right: 10px;
+}
+
+.page h1 {
+    margin: 0 0 10px 0;
+    font-size: 26px;
+}

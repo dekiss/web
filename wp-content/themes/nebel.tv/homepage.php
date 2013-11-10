@@ -8,12 +8,11 @@
  */
 
 get_header(); ?>
-
+    <div class="side-menu-buttons">
+        <?php wp_nav_menu( array( 'theme_location' => 'side', 'menu_class' => '' ) ); ?>
+    </div>
 	<div id="primary" class="content-area">
 		<div id="content" class="site-content" role="main">
-
-			<?php /* The loop */ ?>
-			<?php while ( have_posts() ) : the_post(); ?>
 
 				<article class="slice-1 slice">
 					<header class="entry-header homepage-header">
@@ -184,8 +183,6 @@ get_header(); ?>
                         </div>
                     </div>
                 </articel>
-                <?php // comments_template(); ?>
-			<?php endwhile; ?>
 
 		</div><!-- #content -->
 	</div><!-- #primary -->

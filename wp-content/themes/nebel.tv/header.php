@@ -16,7 +16,7 @@
 <html class="ie ie8" <?php language_attributes(); ?>>
 <![endif]-->
 <!--[if !(IE 7) | !(IE 8)  ]><!-->
-<html <?php language_attributes(); ?>>
+<html <?php language_attributes(); ?> xmlns="http://www.w3.org/1999/html">
 <!--<![endif]-->
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
@@ -29,6 +29,9 @@
 	<![endif]-->
 	<?php wp_head(); ?>
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript" src="/wp-content/themes/nebel.tv/js/jquery.mousewheel.min.js"></script>
+    <script type="text/javascript" src="/wp-content/themes/nebel.tv/js/jquery.mCustomScrollbar.min.js"></script>
+    <link rel="stylesheet" href="/wp-content/themes/nebel.tv/css/jquery.mCustomScrollbar.css"/>
 </head>
 
 <body <?php body_class(); ?>>
@@ -41,9 +44,10 @@
 				</a>
 				<div id="navbar" class="navbar">
 					<nav id="site-navigation" class="navigation main-navigation" role="navigation">
-						<h3 class="menu-toggle"><?php _e( 'Menu', 'twentythirteen' ); ?></h3>
-						<a class="screen-reader-text skip-link" href="#content" title="<?php esc_attr_e( 'Skip to content', 'twentythirteen' ); ?>"><?php _e( 'Skip to content', 'twentythirteen' ); ?></a>
-						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ) ); ?>
+						<?php
+                            if(is_front_page()) { wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ) );}
+                            else wp_nav_menu( array('theme_location' => 'high', 'menu_class' => 'nav-menu'));
+                        ?>
 					</nav><!-- #site-navigation -->
 				</div><!-- #navbar -->
                 <div class="hot-links">
@@ -56,8 +60,5 @@
             <?php wp_nav_menu( array( 'theme_location' => 'secondary', 'menu_class' => 'secondary-nav-menu' ) ); ?>
 
 		</header><!-- #masthead -->
-        <div class="side-menu-buttons">
-            <?php wp_nav_menu( array( 'theme_location' => 'side', 'menu_class' => '' ) ); ?>
-        </div>
 
 		<div id="main" class="site-main">

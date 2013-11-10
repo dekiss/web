@@ -93,5 +93,14 @@
 
         $('.homepage-figure-content .item').removeClass('active');
         $('.homepage-figure-content .'+$(this).attr('data-target')).addClass('active');
-    })
+    });
+
+    $('.content-scroll').mCustomScrollbar({
+        autoHideScrollbar: Boolean,
+        scrollInertia: 0,
+        mouseWheelPixels: 100,
+        advanced: {
+            autoScrollOnFocus: false
+        }
+    });
 } )( jQuery );
