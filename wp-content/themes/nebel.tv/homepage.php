@@ -16,23 +16,25 @@ get_header(); ?>
 
 				<article class="slice-1 slice">
 					<header class="entry-header homepage-header">
-						<h1 class="entry-title"><span class="first-letter">W</span>hatever you want.&nbsp;&nbsp;<span
-                                class="first-letter">W</span>henever you want.&nbsp;&nbsp;<span class="first-letter">W</span>henever you want.
-                                <a class="try-it-now" href="#"></a>
+						<h1 class="entry-title">
+                            <span class="first-letter hidden">W</span><span class="hidden">hatever you want.&nbsp;&nbsp;</span>
+                            <span class="first-letter hidden">W</span><span class="hidden">henever you want.&nbsp;&nbsp;</span>
+                            <span class="first-letter hidden">W</span><span class="hidden">herever you want.</span>
+                                <a class="try-it-now hidden" href="#"></a>
                         </h1>
 					</header><!-- .entry-header -->
 
 					<div class="entry-content">
-                        <div class="homepage-figure">
-                            <div class="item phone"><a data-target="phone" href="#"></a></div>
-                            <div class="item tablet"><a data-target="tablet" href="#"></a></div>
-                            <div class="item device"><a data-target="device" href="#"></a></div>
-                            <div class="item usb"><a data-target="usb" href="#"></a></div>
-                            <div class="item tv active"><a data-target="tv" href="#"></a></div>
+                        <div class="homepage-figure none">
+                            <div class="item phone hidden"><a data-target="phone" href="#"></a></div>
+                            <div class="item tablet hidden"><a data-target="tablet" href="#"></a></div>
+                            <div class="item device hidden"><a data-target="device" href="#"></a></div>
+                            <div class="item usb hidden"><a data-target="usb" href="#"></a></div>
+                            <div class="item tv hidden"><a data-target="tv" href="#"></a></div>
                         </div>
-                        <div class="homepage-figure-content">
+                        <div class="homepage-figure-content hidden homepage-step-1">
                             <div class="item tv active">
-                                <p>Cutting edge <span class="green">technology</span> allows access to <span class="green">media</span></p>
+                                <p>Cutting edge <span class="">technology</span> allows access to <span class="">media</span></p>
                                 <img src="/wp-content/themes/nebel.tv/images/tv-big.png" alt="tv" width="477" height="307"/>
                             </div>
                             <div class="item usb">

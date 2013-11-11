@@ -103,4 +103,73 @@
             autoScrollOnFocus: false
         }
     });
+
+    var homepage_effects = function() {
+        var i = 0;
+        var next = function() {
+            if(typeof functions[i] === 'function'){
+                functions[i]();
+                i++;
+            }
+        };
+        var functions = [
+            function() {
+                $('.homepage-step-1').removeClass('hidden', {duration: 500, complete: next});
+            },
+            function() {
+                var i = 0;
+                $('.homepage-step-1 span').addClass('green', {duration: 300, complete: function() {++i; i === $('.homepage-step-1 span').length ? next(): ''}});
+            },
+            function() {
+                setTimeout(next, 2000);
+            },
+            function() {
+                $('.homepage-step-1').animate({top: '0px'}, 1000, next);
+            },
+            function() {
+                $('.homepage-step-1').animate({right: '0px'}, 1000, next);
+                $('.homepage-figure').removeClass('none');
+            },
+            function() {
+                $('.homepage-figure .phone').animate({top: '0px', opacity: 1}, 1000);
+                $('.first-letter:eq(0)').removeClass('hidden', {duration: 1000, complete: next});
+            },
+            function() {
+                $('.first-letter:eq(0)').next().animate({opacity: 1}, 500, next);
+            },
+            function() {
+                $('.homepage-figure .tablet').animate({top: '110px', opacity: 1}, 1000);
+                $('.homepage-figure .device').animate({top: '283px', opacity: 1}, 1000);
+                $('.first-letter:eq(1)').removeClass('hidden', {duration: 1000, complete: next});
+            },
+            function() {
+                $('.first-letter:eq(1)').next().removeClass('hidden', 1000, next);
+            },
+            function() {
+                $('.homepage-figure .usb').animate({top: '283px', opacity: 1}, 1000);
+                $('.homepage-figure .tv').animate({top: '110px', opacity: 1}, 1000);
+                $('.first-letter:eq(2)').removeClass('hidden', {duration: 1000, complete: next});
+            },
+            function() {
+                $('.first-letter:eq(2)').next().removeClass('hidden', 1000, next);
+            },
+            function() {
+                $('.try-it-now').removeClass('hidden', 1000, next);
+            }
+
+        ];
+        next();
+    };
+
+    $(document).ready(function() {
+        var placeToCenter = function(elem) {
+            var p_w = elem.parent().width();
+            var e_w = elem.width();
+            elem.css('right', p_w / 2 - e_w /2);
+        }
+        placeToCenter($('.homepage-step-1'));
+
+        homepage_effects();
+    });
+
 } )( jQuery );

@@ -31,6 +31,7 @@
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script type="text/javascript" src="/wp-content/themes/nebel.tv/js/jquery.mousewheel.min.js"></script>
     <script type="text/javascript" src="/wp-content/themes/nebel.tv/js/jquery.mCustomScrollbar.min.js"></script>
+
     <link rel="stylesheet" href="/wp-content/themes/nebel.tv/css/jquery.mCustomScrollbar.css"/>
 </head>
 

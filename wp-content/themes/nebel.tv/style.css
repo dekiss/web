@@ -3330,6 +3330,8 @@ footer.entry-meta {
     position: absolute;
     width: 182px;
     height: 182px;
+    background: url('images/homepage-item.png') no-repeat scroll left top;
+    top: 1000px;
 }
 
 .homepage-figure .item.active,
@@ -3340,11 +3342,11 @@ footer.entry-meta {
     left: 141px;
 }
 .homepage-figure .tablet {
-    top: 110px;
+    /*top: 110px;*/
     left: -10px;
 }
 .homepage-figure .tv {
-    top: 110px;
+    /*top: 110px;*/
     right: 10px;
 }
 .homepage-figure .usb {
@@ -3377,7 +3379,7 @@ footer.entry-meta {
 }
 
 .homepage-figure-content {
-    float: right;
+    /*float: right;*/
     width: 500px;
 }
 
@@ -3394,6 +3396,20 @@ footer.entry-meta {
 
 .green {
     color: #bfd092;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.none {
+    display:none;
+}
+
+.center {
+    float: none;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .greener {
@@ -3429,6 +3445,7 @@ footer.entry-meta {
 }
 .slice {
     font-family: open_sanslight;
+    min-height: 550px;
 }
 .slice p {
     font-family: open_sanssemibold;
@@ -3674,4 +3691,23 @@ article.slice {
 .page h1 {
     margin: 0 0 10px 0;
     font-size: 26px;
+}
+
+.homepage-step-1.right {
+    /*right: 0;*/
+    /*float: none;*/
+
+}
+
+.homepage-step-1 {
+    position: absolute;
+    top: -50px;
+}
+
+.entry-content {
+    position: relative;
+}
+
+.first-letter.hidden {
+    margin-left: -1000px;
 }
