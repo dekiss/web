@@ -35,7 +35,7 @@ get_header(); ?>
                             <div class="item tablet hidden"><a data-target="tablet" href="#"></a></div>
                             <div class="item device hidden"><a data-target="device" href="#"></a></div>
                             <div class="item usb hidden"><a data-target="usb" href="#"></a></div>
-                            <div class="item tv hidden"><a data-target="tv" href="#"></a></div>
+                            <div class="item tv active hidden"><a data-target="tv" href="#"></a></div>
                         </div>
                         <div class="homepage-figure-content hidden homepage-step-1">
                             <div class="item tv active">

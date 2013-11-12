@@ -3322,8 +3322,8 @@ footer.entry-meta {
     /*background: url('images/homepage-figure.png') no-repeat scroll left top;*/
     position: relative;
     float: left;
-    width: 481px;
-    height: 464px;
+    width: 455px;
+    height: 455px;
 }
 .phase {
     position: absolute;
@@ -3370,11 +3370,11 @@ footer.entry-meta {
 }
 .homepage-figure .tv {
     /*top: 162px;*/
-    right: 30px;
+    right: 2px;
 }
 .homepage-figure .usb {
     /*top: 295px;*/
-    right: 153px;
+    right: 123px;
 }
 .homepage-figure .device {
     /*top: 216px;*/

@@ -103,7 +103,59 @@
             autoScrollOnFocus: false
         }
     });
+    function getRotationDegrees(obj) {
+        var matrix = obj.css("-webkit-transform") ||
+            obj.css("-moz-transform")    ||
+            obj.css("-ms-transform")     ||
+            obj.css("-o-transform")      ||
+            obj.css("transform");
+        if(matrix !== 'none') {
+            var values = matrix.split('(')[1].split(')')[0].split(',');
+            var a = values[0];
+            var b = values[1];
+            var angle = Math.round(Math.atan2(b, a) * (180/Math.PI));
+        } else { var angle = 0; }
 
+//        if(angle < 0) angle +=360;
+        return angle;
+    }
+//    $.fn.animateRotate = function(angle, duration, easing, complete) {
+//        return this.each(function() {
+//            var $elem = $(this);
+//            var cur = getRotationDegrees($elem);
+//            $({deg: cur}).animate({deg: angle}, {
+//                duration: duration,
+//                easing: easing,
+//                step: function(now) {
+//                    $elem.css({
+//                        transform: 'rotate(' + now + 'deg)'
+//                    });
+//                },
+//                complete: complete || $.noop
+//            });
+//        });
+//    };
+
+    $.fn.animateRotate = function(startAngle, endAngle, duration, easing, complete){
+        return this.each(function(){
+            var elem = $(this);
+
+            $({deg: startAngle}).animate({deg: endAngle}, {
+                duration: duration,
+                easing: easing,
+                step: function(now){
+                    elem.css({
+                        '-moz-transform':'rotate('+now+'deg)',
+                        '-webkit-transform':'rotate('+now+'deg)',
+                        '-o-transform':'rotate('+now+'deg)',
+                        '-ms-transform':'rotate('+now+'deg)',
+                        'transform':'rotate('+now+'deg)'
+                    });
+                },
+                complete: complete || $.noop
+            });
+        });
+    };
     var homepage_effects = function() {
         var i = 0;
         var next = function() {
@@ -171,6 +223,57 @@
             function() {
                 $('.homepage-figure .phase-5').removeClass('hidden', { duration: 300, complete: next });
             },
+            function() {
+                $('.homepage-figure').animateRotate(0, 72, 500, 'linear');
+                $('.homepage-figure .item').animateRotate(0, -72, 500, 'linear');
+                $('.homepage-figure .item.active').removeClass('active');
+                $('.homepage-figure .item.phone').addClass('active');
+
+                $('.homepage-figure-content .item').removeClass('active');
+                $('.homepage-figure-content .phone').addClass('active');
+                setTimeout(next, 3000);
+            },
+            function() {
+                $('.homepage-figure').animateRotate(72, 144, 500, 'linear');
+                $('.homepage-figure .item').animateRotate(-72, -144, 500, 'linear');
+                $('.homepage-figure .item.active').removeClass('active', 100);
+                $('.homepage-figure .item.tablet').addClass('active', 100);
+
+                $('.homepage-figure-content .item').removeClass('active', 100);
+                $('.homepage-figure-content .tablet').addClass('active', 100);
+                setTimeout(next, 3000);
+            },
+            function() {
+                $('.homepage-figure').animateRotate(144, 216, 500, 'linear');
+                $('.homepage-figure .item').animateRotate(-144, -216, 500, 'linear');
+                $('.homepage-figure .item.active').removeClass('active', 100);
+                $('.homepage-figure .item.device').addClass('active', 100);
+
+                $('.homepage-figure-content .item').removeClass('active', 100);
+                $('.homepage-figure-content .device').addClass('active', 100);
+                setTimeout(next, 3000);
+            },
+            function() {
+                $('.homepage-figure').animateRotate(216, 288, 500, 'linear');
+                $('.homepage-figure .item').animateRotate(-216, -288, 500, 'linear');
+                $('.homepage-figure .item.active').removeClass('active', 100);
+                $('.homepage-figure .item.usb').addClass('active', 100);
+
+                $('.homepage-figure-content .item').removeClass('active', 100);
+                $('.homepage-figure-content .usb').addClass('active', 100);
+                setTimeout(next, 3000);
+            },
+            function() {
+                $('.homepage-figure').animateRotate(288, 360, 500, 'linear');
+                $('.homepage-figure .item').animateRotate(-288, -360, 500, 'linear');
+                $('.homepage-figure .item.active').removeClass('active', 100);
+                $('.homepage-figure .item.tv').addClass('active', 100);
+
+                $('.homepage-figure-content .item').removeClass('active', 100);
+                $('.homepage-figure-content .tv').addClass('active', 100);
+                setTimeout(next, 3000);
+            },
+
 
         ];
         next();
