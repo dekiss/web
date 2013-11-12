@@ -138,16 +138,16 @@
                 $('.first-letter:eq(0)').next().animate({opacity: 1}, 500, next);
             },
             function() {
-                $('.homepage-figure .tablet').animate({top: '110px', opacity: 1}, 1000);
-                $('.homepage-figure .device').animate({top: '283px', opacity: 1}, 1000);
+                $('.homepage-figure .tablet').animate({top: '36px', opacity: 1}, 1000);
+                $('.homepage-figure .device').animate({top: '216px', opacity: 1}, 1000);
                 $('.first-letter:eq(1)').removeClass('hidden', {duration: 1000, complete: next});
             },
             function() {
                 $('.first-letter:eq(1)').next().removeClass('hidden', 1000, next);
             },
             function() {
-                $('.homepage-figure .usb').animate({top: '283px', opacity: 1}, 1000);
-                $('.homepage-figure .tv').animate({top: '110px', opacity: 1}, 1000);
+                $('.homepage-figure .usb').animate({top: '295px', opacity: 1}, 1000);
+                $('.homepage-figure .tv').animate({top: '162px', opacity: 1}, 1000);
                 $('.first-letter:eq(2)').removeClass('hidden', {duration: 1000, complete: next});
             },
             function() {
@@ -155,7 +155,22 @@
             },
             function() {
                 $('.try-it-now').removeClass('hidden', 1000, next);
-            }
+            },
+            function() {
+                $('.homepage-figure .phase-1').removeClass('hidden', { duration: 300, complete: next });
+            },
+            function() {
+                $('.homepage-figure .phase-2').removeClass('hidden', { duration: 300, complete: next });
+            },
+            function() {
+                $('.homepage-figure .phase-3').removeClass('hidden', { duration: 300, complete: next });
+            },
+            function() {
+                $('.homepage-figure .phase-4').removeClass('hidden', { duration: 300, complete: next });
+            },
+            function() {
+                $('.homepage-figure .phase-5').removeClass('hidden', { duration: 300, complete: next });
+            },
 
         ];
         next();

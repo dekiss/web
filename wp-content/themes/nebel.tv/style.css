@@ -3319,17 +3319,40 @@ footer.entry-meta {
 }
 
 .homepage-figure {
-    background: url('images/homepage-figure.png') no-repeat scroll -10px top;
+    /*background: url('images/homepage-figure.png') no-repeat scroll left top;*/
     position: relative;
     float: left;
     width: 481px;
     height: 464px;
 }
+.phase {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.homepage-figure .phase-1 {
+    background: url('images/homepage-figure1.png') no-repeat scroll left top;
+}
+.homepage-figure .phase-2 {
+    background: url('images/homepage-figure2.png') no-repeat scroll left top;
+}
+.homepage-figure .phase-3 {
+    background: url('images/homepage-figure3.png') no-repeat scroll left top;
+}
+.homepage-figure .phase-4 {
+    background: url('images/homepage-figure4.png') no-repeat scroll left top;
+}
+.homepage-figure .phase-5 {
+    background: url('images/homepage-figure5.png') no-repeat scroll left top;
+}
 
 .homepage-figure .item {
     position: absolute;
-    width: 182px;
-    height: 182px;
+    width: 160px;
+    height: 160px;
     background: url('images/homepage-item.png') no-repeat scroll left top;
     top: 1000px;
 }
@@ -3339,23 +3362,23 @@ footer.entry-meta {
     background: url('images/homepage-item-hover.png') no-repeat scroll left top;
 }
 .homepage-figure .phone {
-    left: 141px;
+    left: 203px;
 }
 .homepage-figure .tablet {
-    /*top: 110px;*/
-    left: -10px;
+    /*top: 36px;*/
+    left: 20px;
 }
 .homepage-figure .tv {
-    /*top: 110px;*/
-    right: 10px;
+    /*top: 162px;*/
+    right: 30px;
 }
 .homepage-figure .usb {
-    bottom: 0;
-    right: 65px;
+    /*top: 295px;*/
+    right: 153px;
 }
 .homepage-figure .device {
-    bottom: 0;
-    left: 48px;
+    /*top: 216px;*/
+    left: 0;
 }
 .homepage-figure .item a {
     display: block;
@@ -3363,7 +3386,7 @@ footer.entry-meta {
     height: 100%;
 }
 .homepage-figure .phone a {
-    background: url('images/phone-small.png') no-repeat scroll 80% 50%;
+    background: url('images/phone-small.png') no-repeat scroll -10% 50%;
 }
 .homepage-figure .tablet a {
     background: url('images/tablet-small.png') no-repeat scroll 50%;

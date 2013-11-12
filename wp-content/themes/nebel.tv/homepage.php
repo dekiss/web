@@ -26,6 +26,11 @@ get_header(); ?>
 
 					<div class="entry-content">
                         <div class="homepage-figure none">
+                            <div class="phase-1 phase hidden"></div>
+                            <div class="phase-2 phase hidden"></div>
+                            <div class="phase-3 phase hidden"></div>
+                            <div class="phase-4 phase hidden"></div>
+                            <div class="phase-5 phase hidden"></div>
                             <div class="item phone hidden"><a data-target="phone" href="#"></a></div>
                             <div class="item tablet hidden"><a data-target="tablet" href="#"></a></div>
                             <div class="item device hidden"><a data-target="device" href="#"></a></div>
