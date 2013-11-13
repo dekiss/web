@@ -14,7 +14,7 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<div id="content" class="site-content" role="main">
 
-				<article class="slice-1 slice">
+				<article class="slice-1 slice" data-500="position:abosolute;top:20px;" data-1500="top: -600px;">
 					<header class="entry-header homepage-header">
 						<h1 class="entry-title">
                             <span class="first-letter hidden">W</span><span class="hidden">hatever you want.&nbsp;&nbsp;</span>
@@ -59,13 +59,13 @@ get_header(); ?>
 					</div><!-- .entry-content -->
 
 				</article><!-- #post -->
-                <article class="slice-2 slice">
+                <article class="slice-2 slice" data-500-start="" data-3500="">
                     <div class="entry-content">
-                        <div class="media-sharing">
+                        <div class="media-sharing" data-700="top:1000px" data-1500="top:0px" data-2300="top:0px" data-3100="top:-600px">
                             <h2 class="green drop-shadow">Media sharing</h2>
                             <p class="white drop-shadow">Sharing your media has now never been easier. Instant access to the media files of your friends.</p>
                         </div>
-                        <div class="full-control">
+                        <div class="full-control" data-700="top:1000px" data-1700="top:450px" data-2500="top:450px" data-3500="top:-600px">
                             <h2 class="green drop-shadow">Full control</h2>
                             <p class="white drop-shadow">Full control over access to your own material, share only with those within your social circle.</p>
                         </div>
@@ -73,7 +73,7 @@ get_header(); ?>
 
                 </article><!-- #post -->
                 </article><!-- #post -->
-                <article class="slice-3 slice">
+                <article class="slice-3 slice" data-3500="" data-6500="">
                     <div class="entry-content">
                         <div class="live-recorded">
                             <h2 class="green drop-shadow">Enjoy both Live and Recorded content</h2>

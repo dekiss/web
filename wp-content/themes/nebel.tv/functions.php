@@ -178,6 +178,7 @@ function twentythirteen_scripts_styles() {
     wp_enqueue_script( 'jquery-mousewheel', get_template_directory_uri() . '/js/jquery.mousewheel.min.js', array( 'jquery' ), '2013-11-11', true );
     wp_enqueue_script( 'jquery-scrollbar', get_template_directory_uri() . '/js/jquery.mCustomScrollbar.min.js', array( 'jquery-mousewheel' ), '2013-11-11', true );
     wp_enqueue_script( 'jquery-ui', get_template_directory_uri() . '/js/jquery-ui-1.10.3.custom.min.js', array( 'jquery' ), '2013-11-11', true );
+    wp_enqueue_script( 'jquery-skrollr', get_template_directory_uri() . '/js/skrollr.min.js', array( 'jquery' ), '2013-11-11', true );
 
     // Loads JavaScript file with functionality specific to Twenty Thirteen.
     wp_enqueue_script( 'twentythirteen-script', get_template_directory_uri() . '/js/functions.js', array( 'jquery-ui' ), '2013-07-18', true );

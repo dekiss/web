@@ -231,7 +231,7 @@
 
                 $('.homepage-figure-content .item').removeClass('active');
                 $('.homepage-figure-content .phone').addClass('active');
-                setTimeout(next, 3000);
+                setTimeout(next, 2000);
             },
             function() {
                 $('.homepage-figure').animateRotate(72, 144, 500, 'linear');
@@ -241,7 +241,7 @@
 
                 $('.homepage-figure-content .item').removeClass('active', 100);
                 $('.homepage-figure-content .tablet').addClass('active', 100);
-                setTimeout(next, 3000);
+                setTimeout(next, 2000);
             },
             function() {
                 $('.homepage-figure').animateRotate(144, 216, 500, 'linear');
@@ -251,7 +251,7 @@
 
                 $('.homepage-figure-content .item').removeClass('active', 100);
                 $('.homepage-figure-content .device').addClass('active', 100);
-                setTimeout(next, 3000);
+                setTimeout(next, 2000);
             },
             function() {
                 $('.homepage-figure').animateRotate(216, 288, 500, 'linear');
@@ -261,7 +261,7 @@
 
                 $('.homepage-figure-content .item').removeClass('active', 100);
                 $('.homepage-figure-content .usb').addClass('active', 100);
-                setTimeout(next, 3000);
+                setTimeout(next, 2000);
             },
             function() {
                 $('.homepage-figure').animateRotate(288, 360, 500, 'linear');
@@ -271,7 +271,7 @@
 
                 $('.homepage-figure-content .item').removeClass('active', 100);
                 $('.homepage-figure-content .tv').addClass('active', 100);
-                setTimeout(next, 3000);
+                setTimeout(next, 2000);
             },
 
 
@@ -288,6 +288,7 @@
         placeToCenter($('.homepage-step-1'));
 
         homepage_effects();
+        var s = skrollr.init();
     });
 
 } )( jQuery );
