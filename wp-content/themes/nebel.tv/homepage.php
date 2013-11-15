@@ -72,38 +72,44 @@ get_header(); ?>
                     </div><!-- .entry-content -->
 
                 </article><!-- #post -->
-                </article><!-- #post -->
-                <article class="slice-3 slice" data-3500="" data-6500="">
+                <article class="slice-3 slice" data-2500="" data-5500="">
                     <div class="entry-content">
-                        <div class="live-recorded">
+                        <div class="live-recorded" data-2700="top:1000px" data-3500="top: 0px" data-5000="top:0px" data-5100="top:-600px">
                             <h2 class="green drop-shadow">Enjoy both Live and Recorded content</h2>
                             <p class="white drop-shadow">Pause live broadcasts and continue watching whenever you choose, wherever you choose.</p>
                         </div>
-                        <div class="missed">
+                        <div class="live-recorded-2" data-3500="left:-1000px" data-4000="left:65px" data-5000="top:240px" data-5500="top:-600px"></div>
+                        <div class="live-recorded-3" data-3500="right: -1000px" data-4000="right:50px" data-5000="top:240px" data-5500="top:-600px"></div>
+                        <div class="missed" data-3500="top:1000px" data-4000="top:350px;" data-5000="top:350px" data-5500="top:-600px">
                             <p class="green dwop-shadow">Missed an episode of your favorite show? Access the recorded
                                 content of your social network. Never miss anything again!</p>
                         </div>
                     </div><!-- .entry-content -->
 
                 </article><!-- #post -->
-                <article class="slice-4 slice">
+                <article class="slice-4 slice" data-4500="" data-7500="">
                     <div class="entry-content">
-                        <div class="smart-playback">
+                        <div class="smart-playback-1" data-4700="top:1000px" data-5500="top:0px" data-6500="top:0px" data-7100="top:-600px"></div>
+                        <div class="smart-playback" data-4900="top:1000px" data-5900="top:0px" data-6600="top:0px" data-7500="top:-600px">
                             <h2 class="green drop-shadow">Smart playback</h2>
                             <p class="white drop-shadow">Technology adjusts to screen capabilities and available network bandwidth</p>
                         </div>
-                        <div class="bandwidth-load">
+                        <div class="bandwidth-load" data-4900="top:1000px" data-5900="top:210px" data-6600="top:210px" data-7500="top:-600px">
                             <span class="green drop-shadow">Bandwidth load</span>
                         </div>
                     </div><!-- .entry-content -->
                 </article>
-                <article class="slice slice-5">
+                <article class="slice slice-5" data-7500="" data-10500="">
                     <div class="entry-content">
-                        <h2 class="white drop-shadow">Cutting edge technology is for free!!!</h2>
-                        <p class="white drop-shadow">
-                            That’s right, pay absolutely nothing, zero, zilch, for the software download for
-                            your applicable device from the online store.
-                        </p>
+                        <div class="pay-zero-1" data-7500="left:-1000px" data-8000="left:0" data-9500="top:50px"; data-10500="top:-600px"></div>
+                        <div class="pay-zero-2" data-7500="right:-1000px" data-8000="right:0" data-9500="top:110px"; data-10500="top:-600px"></div>
+                        <div class="pay-zero" data-8000="top:1000px" data-8200="top:70px" data-9500="top:70px" data-10500="top:-600px">
+                            <h2 class="white drop-shadow">Cutting edge technology is for free!!!</h2>
+                            <p class="white drop-shadow">
+                                That’s right, pay absolutely nothing, zero, zilch, for the software download for
+                                your applicable device from the online store.
+                            </p>
+                        </div>
                     </div>
                 </article>
                 <article class="slice slice-6">
