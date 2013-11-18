@@ -102,11 +102,109 @@ get_header(); ?>
                         </div>
                     </div><!-- .entry-content -->
                 </article>
-                <article class="slice slice-5" data-7500="" data-10500="">
+                <article class="slice slice-5 ui ui-1" data-7500="" data-10500="">
                     <div class="entry-content">
-                        <div class="pay-zero-1" data-7500="left:-1000px" data-8000="left:0" data-9500="top:50px"; data-10500="top:-600px"></div>
-                        <div class="pay-zero-2" data-7500="right:-1000px" data-8000="right:0" data-9500="top:110px"; data-10500="top:-600px"></div>
-                        <div class="pay-zero" data-8000="top:1000px" data-8200="top:70px" data-9500="top:70px" data-10500="top:-600px">
+                        <div class="text center" data-8000="top:1000px" data-8700="top:40px" data-10000="top:40px" data-10500="top:-600px">
+                            <h2 class="green drop-shadow fs-42">Friend feeds</h2>
+                            <p class="white drop-shadow">
+                                the stream of audio/video commented/rated by your network. Your highly personalized media guide.
+                            </p>
+                        </div>
+                        <div class="tv" data-8000="left:-1000px" data-8700="left:0px" data-10000="left:0px" data-10500="left:-1000px">
+                            <div class="magnifier" data-8700="opacity:0" data-9200="opacity:1" data-10000="opacity:1" data-10500="opacity:0"></div>
+                        </div>
+                        <div class="magnified" data-8700="opacity:0" data-9200="opacity:1" data-10000="opacity:1" data-10500="opacity:0"></div>
+                    </div>
+                </article>
+                <article class="slice slice-6 ui ui-2" data-9500="" data-12500="">
+                    <div class="entry-content">
+                        <div class="text center" data-10000="top:1000px" data-10700="top:40px" data-12000="top:40px" data-12500="top:-600px">
+                            <h2 class="green drop-shadow fs-42">What's close</h2>
+                            <p class="white drop-shadow">
+                                access to all of your home media library and content which is highly availble in your current location
+                            </p>
+                        </div>
+                        <div class="device" data-10000="top:1000px" data-10700="top:240px" data-12000="top:240px" data-12500="top:1000px">
+                            <div class="magnifier" data-10700="opacity:0" data-11200="opacity:1" data-12000="opacity:1" data-12500="opacity:0"></div>
+                        </div>
+                        <div class="magnified" data-10700="opacity:0" data-11200="opacity:1" data-12000="opacity:1" data-12500="opacity:0"></div>
+                    </div>
+                </article>
+                <article class="slice slice-7 ui ui-3" data-11500="" data-14500="">
+                    <div class="entry-content">
+                        <div class="text" data-12000="top:1000px" data-12700="top:40px" data-14000="top:40px" data-14500="top:-600px">
+                            <h2 class="green drop-shadow">What's hot</h2>
+                            <p class="white drop-shadow">
+                                the content which is most ranked/viewed by your network. The easy way to acquaint new media friends and artists.
+                            </p>
+                        </div>
+                        <div class="phone" data-12000="top:-1000px" data-12700="top:40px" data-14000="top:40px" data-14500="top:-1000px">
+                            <div class="magnifier" data-12700="opacity:0" data-13200="opacity:1" data-14000="opacity:1" data-14500="opacity:0"></div>
+                        </div>
+                        <div class="magnified" data-12700="opacity:0" data-13200="opacity:1" data-14000="opacity:1" data-14500="opacity:0"></div>
+                    </div>
+                </article>
+                <article class="slice slice-8 ui ui-4" data-13500="" data-16500="">
+                    <div class="entry-content">
+                        <div class="text center" data-14000="top:1000px" data-14700="top:40px" data-16000="top:40px" data-16500="top:-600px">
+                            <h2 class="green drop-shadow fs-42">Recently viewed</h2>
+                            <p class="white drop-shadow">
+                                review the content you played back recently.
+                            </p>
+                        </div>
+                        <div class="tv" data-14000="left:-1000px" data-14700="left:0px" data-16000="left:0px" data-16500="left:-1000px">
+                            <div class="magnifier" data-14700="opacity:0" data-15200="opacity:1" data-16000="opacity:1" data-16500="opacity:0"></div>
+                        </div>
+                        <div class="magnified" data-14700="opacity:0" data-15200="opacity:1" data-16000="opacity:1" data-16500="opacity:0"></div>
+                    </div>
+                </article>
+                <article class="slice slice-9 ui ui-5" data-15500="" data-18500="">
+                    <div class="entry-content">
+                        <div class="text center" data-16000="top:1000px" data-16700="top:40px" data-18000="top:40px" data-18500="top:-600px">
+                            <h2 class="green drop-shadow fs-42">Change mood</h2>
+                            <p class="white drop-shadow">
+                                change your network entirely with simple swipe move.
+                            </p>
+                        </div>
+                        <div class="tablet-sad" data-16000="top:1000px" data-16700="top:240px" data-18000="top:240px" data-18500="top:-600px">
+                            <div class="magnifier" data-16700="opacity:0" data-17200="opacity:1" data-18000="opacity:1" data-18500="opacity:0"></div>
+                        </div>
+                        <div class="magnified" data-16700="opacity:0" data-17200="opacity:1" data-18000="opacity:1" data-18500="opacity:0"></div>
+                    </div>
+                </article>
+                <article class="slice slice-10 ui ui-6" data-17500="" data-20500="">
+                    <div class="entry-content">
+                        <div class="text" data-18000="top:1000px" data-18700="top:40px" data-20000="top:40px" data-20500="top:-600px">
+                            <h2 class="green drop-shadow fs-42">Import media</h2>
+                            <p class="white drop-shadow">
+                                load your movies and get all meta information for your titles instantly via open-source metabase
+                            </p>
+                        </div>
+                        <div class="phone" data-18000="top:-1000px" data-18700="top:40px" data-20000="top:40px" data-20500="top:-600px">
+                            <div class="magnifier" data-18700="opacity:0" data-19200="opacity:1" data-20000="opacity:1" data-20500="opacity:0"></div>
+                        </div>
+                        <div class="magnified" data-18700="opacity:0" data-19200="opacity:1" data-20000="opacity:1" data-20500="opacity:0"></div>
+                    </div>
+                </article>
+                <article class="slice slice-11 ui ui-7" data-19500="" data-22500="">
+                    <div class="entry-content">
+                        <div class="text center" data-20000="top:1000px" data-20700="top:40px" data-22000="top:40px" data-22500="top:-600px">
+                            <h2 class="green drop-shadow fs-42">Content navigate</h2>
+                            <p class="white drop-shadow">
+                                navigate content easily via browsing similar titles or releases from the same artist.
+                            </p>
+                        </div>
+                        <div class="tv" data-20000="left:-1000px" data-20700="left:0px" data-22000="left:0px" data-22500="left:-1000px">
+                            <div class="magnifier" data-20700="opacity:0" data-21200="opacity:1" data-22000="opacity:1" data-22500="opacity:0"></div>
+                        </div>
+                        <div class="magnified" data-20700="opacity:0" data-21200="opacity:1" data-22000="opacity:1" data-22500="opacity:0"></div>
+                    </div>
+                </article>
+                <article class="slice slice-12" data-22500="" data-25500="">
+                    <div class="entry-content">
+                        <div class="pay-zero-1" data-22500="left:-1000px" data-23000="left:0" data-24500="top:50px" data-25500="top:-600px"></div>
+                        <div class="pay-zero-2" data-22500="right:-1000px" data-23000="right:0" data-24500="top:110px" data-25500="top:-600px"></div>
+                        <div class="pay-zero" data-23000="top:1000px" data-23200="top:70px" data-24500="top:70px" data-25500="top:-600px">
                             <h2 class="white drop-shadow">Cutting edge technology is for free!!!</h2>
                             <p class="white drop-shadow">
                                 That’s right, pay absolutely nothing, zero, zilch, for the software download for
@@ -115,7 +213,7 @@ get_header(); ?>
                         </div>
                     </div>
                 </article>
-                <article class="slice slice-6" data-9500="" data-12500="">
+                <article class="slice slice-13" data-24500="" data-27500="">
                     <div class="entry-content">
                         <h2 class="white drop-shadow center smoothly" data-9500="top: 1000px" data-10300="top:40px" data-11300="top:40px" data-12500="top:-600px">
                             Smoothly integrated payment system: <br/>
@@ -136,7 +234,7 @@ get_header(); ?>
                         <div class="payment-system-phone" data-9700="top:1000px" data-10200="top:143px" data-11300="top:143px" data-12500="top:-600px"></div>
                     </div>
                 </article>
-                <article class="slice slice-7" data-11500="" data-14500="">
+                <article class="slice slice-14" data-25500="" data-28500="">
                     <div class="entry-content">
                         <h2 class="white drop-shadow center" data-12000="top:1000px" data-12700="top:40px" data-14000="top:40px" data-14400="top:-600px">
                             Follow your favorite artists without third party intervention
@@ -159,7 +257,7 @@ get_header(); ?>
                         </div>
                     </div>
                 </article>
-                <article class="slice slice-8" data-13500="" data-16500="">
+                <article class="slice slice-15" data-27500="" data-30500="">
                     <div class="entry-content">
                         <h2 class="white drop-shadow" data-13900="top:1000px" data-14600="top:40px" data-16000="top:40px" data-16400="top:-600px">
                             An Artist yourself?<br/>
@@ -187,7 +285,7 @@ get_header(); ?>
                         </div>
                     </div>
                 </article>
-                <articel class="slice slice-9" data-15500="" data-18500="">
+                <article class="slice slice-16" data-29500="" data-32500="">
                     <div class="entry-content">
                         <div class="text" data-16000="top:1000px" data-16700="top:40px">
                             <h2 class="white drop-shadow">The ability to make all of your viewing activities private:</h2>
@@ -206,8 +304,7 @@ get_header(); ?>
                             </p>
                         </div>
                     </div>
-                </articel>
-
+                </article>
 		</div><!-- #content -->
 	</div><!-- #primary -->
 

@@ -3422,6 +3422,10 @@ footer.entry-meta {
     color: #bfd092;
 }
 
+.fs-42 {
+    font-size:42px;
+}
+
 .hidden {
     opacity: 0;
 }
@@ -3483,9 +3487,6 @@ footer.entry-meta {
     margin-bottom: 15px;
 }
 
-.slice-3 .entry-content {
-    /*background: url('images/live-recorded-3.png') no-repeat left top;*/
-}
 
 .slice-3 .live-recorded h2,
 .slice-4 h2{
@@ -3553,17 +3554,14 @@ footer.entry-meta {
     font-size: 21px;
 }
 
-.slice-5 .entry-content {
 
-}
-
-.slice-5 .pay-zero {
+.slice-12 .pay-zero {
 	width: 400px;
 	left:360px;
 	position: absolute;
 }
 
-.slice-5 .pay-zero-1 {
+.slice-12 .pay-zero-1 {
 	background: url('images/pay-zero-1.png') no-repeat left top;
 	position: absolute;
 	width: 310px;
@@ -3572,7 +3570,7 @@ footer.entry-meta {
 
 }
 
-.slice-5 .pay-zero-2 {
+.slice-12 .pay-zero-2 {
 	background:  url('images/pay-zero-2.png') no-repeat right 25%;
 	position: absolute;
 	width: 274px;
@@ -3580,34 +3578,33 @@ footer.entry-meta {
 	top: 110px;
 }
 
-
-.slice-5 h2 {
+.slice-12 h2 {
     font-size: 36px;
 }
 
-.slice-6 h2 {
+.slice-13 h2 {
     font-size: 32px;
     font-family: open_sanssemibold;
 }
 
-.slice-6 .smoothly {
+.slice-13 .smoothly {
 	position: absolute;
 	width: 800px;
 	right: 30px;
 	height: 83px;
 }
 
-.slice-6 .inner .coin {
+.slice-13 .inner .coin {
     background: url('images/coin-ball.png') no-repeat left top;
     padding: 40px 78px 40px 200px;
     opacity: 0;
 }
-.slice-6 .inner .money {
+.slice-13 .inner .money {
 	opacity: 0;
     background: url('images/money-ball.png') no-repeat 85% top;
     padding: 40px 290px 30px 40px ;
 }
-.slice-6 .inner {
+.slice-13 .inner {
     position: absolute;
     padding-right: 250px;
     padding-left: 10px;
@@ -3616,7 +3613,7 @@ footer.entry-meta {
     left:0px;
 }
 
-.slice-6 .payment-system-phone {
+.slice-13 .payment-system-phone {
 	background: url('images/no-credit-cards.png') no-repeat right top;
 	width: 151px;
 	height: 344px;
@@ -3624,37 +3621,37 @@ footer.entry-meta {
 	position: absolute;
 }
 
-.slice-7 h2 {
+.slice-14 h2 {
     padding: 0 135px;
     margin-bottom: 25px;
     position:absolute;
 }
 
-.slice-7 .left {
+.slice-14 .left {
 	left:0;
 }
-.slice-7 .right {
+.slice-14 .right {
 	right:0;
 }
-.slice-7 .left, .slice-7 .right {
+.slice-14 .left, .slice-14 .right {
 	position:absolute;
 	top:200px;
 }
 
-.slice-7 .left, .slice-7 .right,
-.slice-9 .left, .slice-9 .right {
+.slice-14 .left, .slice-14 .right,
+.slice-16 .left, .slice-16 .right {
     width: 50%;
 }
 
-.slice-7 p img, .slice-8 p img, .slice-9 p img {
+.slice-14 p img, .slice-15 p img, .slice-16 p img {
     padding-bottom: 20px;
 }
-.slice-7 p {
+.slice-14 p {
     text-align: center;
     padding: 0 30px;
 }
 
-.slice-8 h2 {
+.slice-15 h2 {
     font-size: 38px;
     text-align: center;
     position:absolute;
@@ -3662,62 +3659,62 @@ footer.entry-meta {
     width: 100%;
 }
 
-.slice-8 .first {
+.slice-15 .first {
 	left:0;
 }
 
-.slice-8 .second {
+.slice-15 .second {
 	left:33.33%;
 }
 
-.slice-8 .third {
+.slice-15 .third {
 	right: 0;
 }
 
-.slice-8 p {
+.slice-15 p {
     padding: 0 20px;
 }
 
-.slice-8 .left {
+.slice-15 .left {
     width: 33.33%;
     text-align: center;
     position: absolute;
     top:220px;
 }
 
-.slice-9 h3 {
+.slice-16 h3 {
     font-size: 20px;
     padding:0 240px;
 }
 
-.slice-9 div {
+.slice-16 div {
     text-align: center;
 }
 
-.slice-9 .text {
+.slice-16 .text {
 	position: absolute;
 	top:40px;
 }
 
-.slice-9 .left, .slice-9 .right {
+.slice-16 .left, .slice-16 .right {
 	position: absolute;
 	top: 280px
 }
 
-.slice-9 .left {
+.slice-16 .left {
 	left:0;
 }
 
-.slice-9 .right {
+.slice-16 .right {
 	right:0;
 }
 
-.slice-9 h2 {
+.slice-16 h2 {
     padding: 0 230px;
     font-size: 31px;
 }
 
-.slice-9 p {
+.slice-16 p {
     padding: 0 80px;
 }
 
@@ -3753,7 +3750,8 @@ article.slice {
     margin: 0 auto;
     position: relative;
 }
-.slice-2,.slice-3,.slice-4,.slice-5,.slice-6,.slice-7,.slice-8,.slice-9 {
+.slice-2,.slice-3,.slice-4,.slice-5,.slice-6,.slice-7,.slice-8,
+.slice-9,.slice-10,.slice-11,.slice-12,.slice-13,.slice-14,.slice-15,.slice-16 {
     display: none;
 }
 .slice-2.skrollable-between,
@@ -3763,14 +3761,18 @@ article.slice {
 .slice-6.skrollable-between,
 .slice-7.skrollable-between,
 .slice-8.skrollable-between,
-.slice-9.skrollable-between {
+.slice-9.skrollable-between,
+.slice-10.skrollable-between,
+.slice-11.skrollable-between,
+.slice-12.skrollable-between,
+.slice-13.skrollable-between,
+.slice-14.skrollable-between,
+.slice-15.skrollable-between,
+.slice-16.skrollable-between {
     display:block;
 }
-.slice-9.skrollable-after {
+.slice-16.skrollable-after {
 	display: block;
-}
-.about {
-
 }
 .entry-title {
     font-size: 31px;
@@ -3887,4 +3889,224 @@ article.slice {
 
 .first-letter.hidden {
     margin-left: -1000px;
+}
+
+.ui-1 .tv {
+    position: absolute;
+    top: 240px;
+    background: url('images/tv-magnifee.png') no-repeat scroll left top;
+    width: 533px;
+    height: 343px;
+}
+
+.ui-1 .magnifier {
+    background: url('images/magnifier.png') no-repeat scroll left top;
+    position: absolute;
+    top: 25px;
+    left: 20px;
+    width: 108px;
+    height: 108px;
+}
+
+.ui-1 .magnified {
+    position:absolute;
+    top: 250px;
+    width: 337px;
+    height: 336px;
+    right: 0;
+    background: url('images/magnified-1.png') no-repeat scroll left top;
+}
+
+.ui-1 .text {
+    position: absolute;
+    padding: 0 200px;
+    width: 100%;
+}
+
+.ui-2 .text {
+    position: absolute;
+    padding: 0 200px;
+}
+
+.ui-2 .magnified {
+    position:absolute;
+    top: 260px;
+    width: 337px;
+    height: 336px;
+    right: 0;
+    background: url('images/magnified-2.png') no-repeat scroll left top;
+}
+.ui-2 .device {
+    position: absolute;
+    top: 240px;
+    left:0;
+    background: url('images/tablet-magnifee.png') no-repeat scroll left top;
+    width: 550px;
+    height: 377px;
+}
+.ui-2 .magnifier {
+    background: url('images/magnifier.png') no-repeat scroll left top;
+    position: absolute;
+    top: 66px;
+    left: 153px;
+    width: 108px;
+    height: 108px;
+}
+
+.ui-3 .text {
+    position: absolute;
+    left: 410px;
+}
+
+.ui-3 .magnified {
+    position:absolute;
+    top: 230px;
+    width: 337px;
+    height: 336px;
+    left: 410px;
+    background: url('images/magnified-3.png') no-repeat scroll left top;
+}
+
+.ui-3 .phone {
+    position: absolute;
+    top: 40px;
+    left:100px;
+    background: url('images/phone-magnifee.png') no-repeat scroll left top;
+    width: 265px;
+    height: 509px;
+}
+
+.ui-3 .magnifier {
+    background: url('images/magnifier-big.png') no-repeat scroll left top;
+    position: absolute;
+    top: 83px;
+    left: 11px;
+    width: 147px;
+    height: 147px;
+}
+
+.ui-4 .tv {
+    position: absolute;
+    top: 240px;
+    background: url('images/tv-magnifee.png') no-repeat scroll left top;
+    width: 533px;
+    height: 343px;
+}
+
+.ui-4 .magnifier {
+    background: url('images/magnifier.png') no-repeat scroll left top;
+    position: absolute;
+    top: 18px;
+    right: 56px;
+    width: 108px;
+    height: 108px;
+}
+
+.ui-4 .magnified {
+    position:absolute;
+    top: 250px;
+    width: 337px;
+    height: 336px;
+    right: 0;
+    background: url('images/magnified-4.png') no-repeat scroll left top;
+}
+
+.ui-4 .text {
+    width: 100%;
+    position: absolute;
+    padding: 0 200px;
+}
+
+.ui-5 .text {
+    position: absolute;
+    padding: 0 200px;
+}
+
+.ui-5 .magnified {
+    position:absolute;
+    top: 260px;
+    width: 337px;
+    height: 336px;
+    right: 0;
+    background: url('images/magnified-5.png') no-repeat scroll left top;
+}
+
+.ui-5 .tablet-sad {
+    position: absolute;
+    background: url('images/tablet-sad.png') no-repeat scroll left top;
+    width: 550px;
+    height: 377px;
+    left:0;
+}
+
+.ui-5 .magnifier {
+    background: url('images/magnifier-extra-big.png') no-repeat scroll left top;
+    position: absolute;
+    top: 101px;
+    left: 173px;
+    width: 189px;
+    height: 189px;
+}
+
+.ui-6 .text {
+    position: absolute;
+    left: 410px;
+}
+
+.ui-6 .magnified {
+    position:absolute;
+    top: 230px;
+    width: 337px;
+    height: 336px;
+    left: 410px;
+    background: url('images/magnified-6.png') no-repeat scroll left top;
+}
+
+.ui-6 .phone {
+    position: absolute;
+    left:100px;
+    background: url('images/phone-magnifee2.png') no-repeat scroll left top;
+    width: 265px;
+    height: 509px;
+}
+
+.ui-6 .magnifier {
+    background: url('images/magnifier-extra-super-big.png') no-repeat scroll left top;
+    position: absolute;
+    top: 225px;
+    left: 21px;
+    width: 226px;
+    height: 226px;
+}
+
+.ui-7 .tv {
+    position: absolute;
+    top: 240px;
+    background: url('images/tv-magnifee2.png') no-repeat scroll left top;
+    width: 533px;
+    height: 343px;
+}
+
+.ui-7 .magnifier {
+    background: url('images/magnifier.png') no-repeat scroll left top;
+    position: absolute;
+    bottom: 36px;
+    left: 90px;
+    width: 108px;
+    height: 108px;
+}
+
+.ui-7 .magnified {
+    position:absolute;
+    top: 250px;
+    width: 337px;
+    height: 336px;
+    right: 0;
+    background: url('images/magnified-7.png') no-repeat scroll left top;
+}
+
+.ui-7 .text {
+    width: 100%;
+    position: absolute;
+    padding: 0 200px;
 }
