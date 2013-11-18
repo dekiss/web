@@ -8,6 +8,9 @@
  */
 
 get_header(); ?>
+    <script type="text/javascript">
+        var is_homepage = true;
+    </script>
     <div class="side-menu-buttons">
         <?php wp_nav_menu( array( 'theme_location' => 'side', 'menu_class' => '' ) ); ?>
     </div>
@@ -112,29 +115,33 @@ get_header(); ?>
                         </div>
                     </div>
                 </article>
-                <article class="slice slice-6">
+                <article class="slice slice-6" data-9500="" data-12500="">
                     <div class="entry-content">
-                        <h2 class="white drop-shadow center">Smoothly integrated payment system: <br/>
+                        <h2 class="white drop-shadow center smoothly" data-9500="top: 1000px" data-10300="top:40px" data-11300="top:40px" data-12500="top:-600px">
+                            Smoothly integrated payment system: <br/>
                             Pay and get paid for your own online content
                         </h2>
-                        <div class="inner">
-                            <p class="white drop-shadow coin">
+                        <div class="inner" data-11300="top:0px" data-12500="top:-600px">
+                            <p class="white drop-shadow coin" data-10300="opacity:0" data-10800="opacity:1">
                                 Live in a country not supported by Paypal?
                                 Not a problem... the integrated Bitcoin system
                                 gives you the best confidentiality possible
                             </p>
-                            <p class="white drop-shadow money">
+                            <p class="white drop-shadow money" data-10800="opacity:0" data-11300="opacity:1">
                                 Tired of being flooded with advertising...
                                 now GET paid to view ads and spent
                                 the credit on your new content!
                             </p>
                         </div>
+                        <div class="payment-system-phone" data-9700="top:1000px" data-10200="top:143px" data-11300="top:143px" data-12500="top:-600px"></div>
                     </div>
                 </article>
-                <article class="slice slice-7">
+                <article class="slice slice-7" data-11500="" data-14500="">
                     <div class="entry-content">
-                        <h2 class="white drop-shadow center">Follow your favorite artists without third party intervention</h2>
-                        <div class="left">
+                        <h2 class="white drop-shadow center" data-12000="top:1000px" data-12700="top:40px" data-14000="top:40px" data-14400="top:-600px">
+                            Follow your favorite artists without third party intervention
+                        </h2>
+                        <div class="left" data-12700="left:-1000px" data-13400="left:0px" data-14200="top:200px" data-14500="top:-600px">
                             <p class="white drop-shadow">
                                 <img src="/wp-content/themes/nebel.tv/images/follow-1.png" width="204" height="204"><br/>
                                 Directly reward the artist themselves
@@ -142,7 +149,7 @@ get_header(); ?>
                                 hosting site etc
                             </p>
                         </div>
-                        <div class="right">
+                        <div class="right" data-12700="right:-1000px" data-13400="right:0px" data-14200="top:200px" data-14500="top:-600px">
                             <p class="white drop-shadow">
                                 <img src="/wp-content/themes/nebel.tv/images/follow-2.png" width="204" height="204"/><br/>
                                 Heard or seen something that you enjoyed?
@@ -152,25 +159,27 @@ get_header(); ?>
                         </div>
                     </div>
                 </article>
-                <article class="slice slice-8">
+                <article class="slice slice-8" data-13500="" data-16500="">
                     <div class="entry-content">
-                        <h2 class="white drop-shadow">An Artist yourself?<br/>
+                        <h2 class="white drop-shadow" data-13900="top:1000px" data-14600="top:40px" data-16000="top:40px" data-16400="top:-600px">
+                            An Artist yourself?<br/>
                             A budding independent film maker<br/>
-                            or creative musician?</h2>
+                            or creative musician?
+                        </h2>
 
-                        <div class="left">
+                        <div class="left first" data-14800="left:-1000px" data-15300="left:0px" data-16100="top:220px" data-16500="top:-600px">
                             <p class="white drop-shadow">
                                 <img src="/wp-content/themes/nebel.tv/images/artist-1.png" height="204" width="204" /><br/>
                                 Promote your content and receive 100% royalties for your work by reaching out to a global audience.
                             </p>
                         </div>
-                        <div class="left">
+                        <div class="left second" data-14800="top:1000px" data-15300="top:220px" data-16100="top:220px" data-16500="top:-600px">
                             <p class="white drop-shadow">
                                 <img src="/wp-content/themes/nebel.tv/images/artist-2.png" height="204" width="204" /><br/>
                                 Create your own news or TV channel, feed it to your network and compete with the likes of CNN and the BBC.
                             </p>
                         </div>
-                        <div class="left">
+                        <div class="left third" data-14800="right:-1000px" data-15300="right:0px" data-16100="top:220px" data-16500="top:-600px">
                             <p class="white drop-shadow">
                                 <img src="/wp-content/themes/nebel.tv/images/artist-3.png" height="204" width="204" /><br/>
                                 Never share or give away your royalties. You works remains your forever.
@@ -178,17 +187,19 @@ get_header(); ?>
                         </div>
                     </div>
                 </article>
-                <articel class="slice slice-9">
+                <articel class="slice slice-9" data-15500="" data-18500="">
                     <div class="entry-content">
-                        <h2 class="white drop-shadow">The ability to make all of your viewing activities private:</h2>
-                        <h3 class="white drop-shadow">You have the ability to share your content and social network with only those you choose. Nothing is shared unless you choose to.</h3>
-                        <div class="left">
+                        <div class="text" data-16000="top:1000px" data-16700="top:40px">
+                            <h2 class="white drop-shadow">The ability to make all of your viewing activities private:</h2>
+                            <h3 class="white drop-shadow">You have the ability to share your content and social network with only those you choose. Nothing is shared unless you choose to.</h3>
+                        </div>
+                        <div class="left" data-16600="opacity:0" data-17100="opacity:1">
                             <p class="green">
                                 <img src="/wp-content/themes/nebel.tv/images/security-1.png" width="204" height="183"/><br/>
                                 Share your content with one friend or group. Nobody is able to pick in!
                             </p>
                         </div>
-                        <div class="right">
+                        <div class="right" data-16600="opacity:0" data-17100="opacity:1">
                             <p class="green">
                                 <img src="/wp-content/themes/nebel.tv/images/security-2.png" width="196" height="183"/> <br/>
                                 Make your social network private: no one except you can analyze and monetize your network.

@@ -86,6 +86,14 @@
         $('.menu-secondary-menu-container').show();
     }
 
+
+    if(is_homepage){
+    	$('#menu-top-menu, #menu-side-menu-buttons').delegate('a', 'click', function(event){
+    		//TODO add scrolling to content
+    		event.preventDefault();
+    		return false;
+    	});
+    }
     $('.homepage-figure .item a').on('click', function(event) {
         event.preventDefault();
         $(this).parent().siblings().removeClass('active');
@@ -94,6 +102,26 @@
         $('.homepage-figure-content .item').removeClass('active');
         $('.homepage-figure-content .'+$(this).attr('data-target')).addClass('active');
     });
+    $('.homepage-figure .item a').each(function(key, item) {
+    	$(this).on('click', function() {
+    		var deg = (key+1)*72;
+
+    		if($('.homepage-figure .item a').length-1 === key)
+    			deg = 0;
+    		var figure = $(this).parent().parent();
+    		figure.animateRotate(defineRotationDegrees(figure, true), deg, 500);
+    		$(this).parent().animateRotate(defineRotationDegrees($(this)), -deg, 500);
+    		$(this).parent().siblings('.item').animateRotate(defineRotationDegrees($(this)), -deg, 500);
+    		console.log('----click happened----');
+
+    	});
+    });
+
+    function defineRotationDegrees(obj, abs) {
+    	return  function(obj) {
+    		return getRotationDegrees(obj, abs);
+    	}
+    };
 
     $('.content-scroll').mCustomScrollbar({
         autoHideScrollbar: Boolean,
@@ -103,7 +131,8 @@
             autoScrollOnFocus: false
         }
     });
-    function getRotationDegrees(obj) {
+
+    function getRotationDegrees(obj, abs) {
         var matrix = obj.css("-webkit-transform") ||
             obj.css("-moz-transform")    ||
             obj.css("-ms-transform")     ||
@@ -116,30 +145,17 @@
             var angle = Math.round(Math.atan2(b, a) * (180/Math.PI));
         } else { var angle = 0; }
 
-//        if(angle < 0) angle +=360;
+       if(angle < 0 && abs) {angle +=360; console.log('wtf')}
+
         return angle;
     }
-//    $.fn.animateRotate = function(angle, duration, easing, complete) {
-//        return this.each(function() {
-//            var $elem = $(this);
-//            var cur = getRotationDegrees($elem);
-//            $({deg: cur}).animate({deg: angle}, {
-//                duration: duration,
-//                easing: easing,
-//                step: function(now) {
-//                    $elem.css({
-//                        transform: 'rotate(' + now + 'deg)'
-//                    });
-//                },
-//                complete: complete || $.noop
-//            });
-//        });
-//    };
 
     $.fn.animateRotate = function(startAngle, endAngle, duration, easing, complete){
         return this.each(function(){
             var elem = $(this);
-
+            if(typeof startAngle === 'function'){
+            	startAngle = startAngle.call(elem, elem);
+            }
             $({deg: startAngle}).animate({deg: endAngle}, {
                 duration: duration,
                 easing: easing,
@@ -229,8 +245,8 @@
                 $('.homepage-figure .item.active').removeClass('active');
                 $('.homepage-figure .item.phone').addClass('active');
 
-                $('.homepage-figure-content .item').removeClass('active');
-                $('.homepage-figure-content .phone').addClass('active');
+                $('.homepage-figure-content .item').removeClass('active', 300);
+                $('.homepage-figure-content .phone').addClass('active', 500);
                 setTimeout(next, 2000);
             },
             function() {
@@ -239,8 +255,8 @@
                 $('.homepage-figure .item.active').removeClass('active', 100);
                 $('.homepage-figure .item.tablet').addClass('active', 100);
 
-                $('.homepage-figure-content .item').removeClass('active', 100);
-                $('.homepage-figure-content .tablet').addClass('active', 100);
+                $('.homepage-figure-content .item').removeClass('active', 300);
+                $('.homepage-figure-content .tablet').addClass('active', 500);
                 setTimeout(next, 2000);
             },
             function() {
@@ -249,8 +265,8 @@
                 $('.homepage-figure .item.active').removeClass('active', 100);
                 $('.homepage-figure .item.device').addClass('active', 100);
 
-                $('.homepage-figure-content .item').removeClass('active', 100);
-                $('.homepage-figure-content .device').addClass('active', 100);
+                $('.homepage-figure-content .item').removeClass('active', 300);
+                $('.homepage-figure-content .device').addClass('active', 500);
                 setTimeout(next, 2000);
             },
             function() {
@@ -259,8 +275,8 @@
                 $('.homepage-figure .item.active').removeClass('active', 100);
                 $('.homepage-figure .item.usb').addClass('active', 100);
 
-                $('.homepage-figure-content .item').removeClass('active', 100);
-                $('.homepage-figure-content .usb').addClass('active', 100);
+                $('.homepage-figure-content .item').removeClass('active', 300);
+                $('.homepage-figure-content .usb').addClass('active', 500);
                 setTimeout(next, 2000);
             },
             function() {
@@ -269,12 +285,10 @@
                 $('.homepage-figure .item.active').removeClass('active', 100);
                 $('.homepage-figure .item.tv').addClass('active', 100);
 
-                $('.homepage-figure-content .item').removeClass('active', 100);
-                $('.homepage-figure-content .tv').addClass('active', 100);
+                $('.homepage-figure-content .item').removeClass('active', 300);
+                $('.homepage-figure-content .tv').addClass('active', 500);
                 setTimeout(next, 2000);
             },
-
-
         ];
         next();
     };

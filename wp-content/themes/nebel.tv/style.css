@@ -957,7 +957,7 @@ img.wp-smiley,
     display: none;
     position: fixed;
     width: 100%;
-    top: 128px;
+    top: 108px;
     background: #adbf7f;
     height: 60px;
     border-bottom: 7px solid #74824e;
@@ -3588,28 +3588,59 @@ footer.entry-meta {
 .slice-6 h2 {
     font-size: 32px;
     font-family: open_sanssemibold;
-    margin-bottom: 25px;
-    padding-left: 200px;
+}
+
+.slice-6 .smoothly {
+	position: absolute;
+	width: 800px;
+	right: 30px;
+	height: 83px;
 }
 
 .slice-6 .inner .coin {
     background: url('images/coin-ball.png') no-repeat left top;
     padding: 40px 78px 40px 200px;
+    opacity: 0;
 }
 .slice-6 .inner .money {
+	opacity: 0;
     background: url('images/money-ball.png') no-repeat 85% top;
     padding: 40px 290px 30px 40px ;
 }
 .slice-6 .inner {
-    background: url('images/no-credit-cards.png') no-repeat right top;
+    position: absolute;
     padding-right: 250px;
     padding-left: 10px;
+    padding-top: 140px;
+    top: 0px;
+    left:0px;
+}
+
+.slice-6 .payment-system-phone {
+	background: url('images/no-credit-cards.png') no-repeat right top;
+	width: 151px;
+	height: 344px;
+	right:40px;
+	position: absolute;
 }
 
 .slice-7 h2 {
     padding: 0 135px;
     margin-bottom: 25px;
+    position:absolute;
 }
+
+.slice-7 .left {
+	left:0;
+}
+.slice-7 .right {
+	right:0;
+}
+.slice-7 .left, .slice-7 .right {
+	position:absolute;
+	top:200px;
+}
+
 .slice-7 .left, .slice-7 .right,
 .slice-9 .left, .slice-9 .right {
     width: 50%;
@@ -3626,7 +3657,21 @@ footer.entry-meta {
 .slice-8 h2 {
     font-size: 38px;
     text-align: center;
-    margin-bottom: 35px;
+    position:absolute;
+    margin: 0;
+    width: 100%;
+}
+
+.slice-8 .first {
+	left:0;
+}
+
+.slice-8 .second {
+	left:33.33%;
+}
+
+.slice-8 .third {
+	right: 0;
 }
 
 .slice-8 p {
@@ -3636,15 +3681,37 @@ footer.entry-meta {
 .slice-8 .left {
     width: 33.33%;
     text-align: center;
+    position: absolute;
+    top:220px;
 }
 
 .slice-9 h3 {
     font-size: 20px;
     padding:0 240px;
 }
+
 .slice-9 div {
     text-align: center;
 }
+
+.slice-9 .text {
+	position: absolute;
+	top:40px;
+}
+
+.slice-9 .left, .slice-9 .right {
+	position: absolute;
+	top: 280px
+}
+
+.slice-9 .left {
+	left:0;
+}
+
+.slice-9 .right {
+	right:0;
+}
+
 .slice-9 h2 {
     padding: 0 230px;
     font-size: 31px;
@@ -3694,8 +3761,13 @@ article.slice {
 .slice-4.skrollable-between,
 .slice-5.skrollable-between,
 .slice-6.skrollable-between,
-.slice-7.skrollable-between {
+.slice-7.skrollable-between,
+.slice-8.skrollable-between,
+.slice-9.skrollable-between {
     display:block;
+}
+.slice-9.skrollable-after {
+	display: block;
 }
 .about {
 
