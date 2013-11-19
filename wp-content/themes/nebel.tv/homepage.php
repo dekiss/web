@@ -104,7 +104,7 @@ get_header(); ?>
                 </article>
                 <article class="slice slice-5 ui ui-1" data-7500="" data-10500="">
                     <div class="entry-content">
-                        <div class="text center" data-8000="top:1000px" data-8700="top:40px" data-10000="top:40px" data-10500="top:-600px">
+                        <div class="text center" data-8000="top:1000px" data-8700="top:60px" data-10000="top:60px" data-10500="top:-600px">
                             <h2 class="green drop-shadow fs-42">Friend feeds</h2>
                             <p class="white drop-shadow">
                                 the stream of audio/video commented/rated by your network. Your highly personalized media guide.
@@ -118,7 +118,7 @@ get_header(); ?>
                 </article>
                 <article class="slice slice-6 ui ui-2" data-9500="" data-12500="">
                     <div class="entry-content">
-                        <div class="text center" data-10000="top:1000px" data-10700="top:40px" data-12000="top:40px" data-12500="top:-600px">
+                        <div class="text center" data-10000="top:1000px" data-10700="top:60px" data-12000="top:60px" data-12500="top:-600px">
                             <h2 class="green drop-shadow fs-42">What's close</h2>
                             <p class="white drop-shadow">
                                 access to all of your home media library and content which is highly availble in your current location
@@ -132,13 +132,13 @@ get_header(); ?>
                 </article>
                 <article class="slice slice-7 ui ui-3" data-11500="" data-14500="">
                     <div class="entry-content">
-                        <div class="text" data-12000="top:1000px" data-12700="top:40px" data-14000="top:40px" data-14500="top:-600px">
+                        <div class="text" data-12000="top:1000px" data-12700="top:60px" data-14000="top:60px" data-14500="top:-600px">
                             <h2 class="green drop-shadow">What's hot</h2>
                             <p class="white drop-shadow">
                                 the content which is most ranked/viewed by your network. The easy way to acquaint new media friends and artists.
                             </p>
                         </div>
-                        <div class="phone" data-12000="top:-1000px" data-12700="top:40px" data-14000="top:40px" data-14500="top:-1000px">
+                        <div class="phone" data-12000="top:-1000px" data-12700="top:60px" data-14000="top:60px" data-14500="top:-1000px">
                             <div class="magnifier" data-12700="opacity:0" data-13200="opacity:1" data-14000="opacity:1" data-14500="opacity:0"></div>
                         </div>
                         <div class="magnified" data-12700="opacity:0" data-13200="opacity:1" data-14000="opacity:1" data-14500="opacity:0"></div>
@@ -146,7 +146,7 @@ get_header(); ?>
                 </article>
                 <article class="slice slice-8 ui ui-4" data-13500="" data-16500="">
                     <div class="entry-content">
-                        <div class="text center" data-14000="top:1000px" data-14700="top:40px" data-16000="top:40px" data-16500="top:-600px">
+                        <div class="text center" data-14000="top:1000px" data-14700="top:60px" data-16000="top:60px" data-16500="top:-600px">
                             <h2 class="green drop-shadow fs-42">Recently viewed</h2>
                             <p class="white drop-shadow">
                                 review the content you played back recently.
@@ -160,7 +160,7 @@ get_header(); ?>
                 </article>
                 <article class="slice slice-9 ui ui-5" data-15500="" data-18500="">
                     <div class="entry-content">
-                        <div class="text center" data-16000="top:1000px" data-16700="top:40px" data-18000="top:40px" data-18500="top:-600px">
+                        <div class="text center" data-16000="top:1000px" data-16700="top:60px" data-18000="top:60px" data-18500="top:-600px">
                             <h2 class="green drop-shadow fs-42">Change mood</h2>
                             <p class="white drop-shadow">
                                 change your network entirely with simple swipe move.
@@ -174,13 +174,13 @@ get_header(); ?>
                 </article>
                 <article class="slice slice-10 ui ui-6" data-17500="" data-20500="">
                     <div class="entry-content">
-                        <div class="text" data-18000="top:1000px" data-18700="top:40px" data-20000="top:40px" data-20500="top:-600px">
+                        <div class="text" data-18000="top:1000px" data-18700="top:60px" data-20000="top:60px" data-20500="top:-600px">
                             <h2 class="green drop-shadow fs-42">Import media</h2>
                             <p class="white drop-shadow">
                                 load your movies and get all meta information for your titles instantly via open-source metabase
                             </p>
                         </div>
-                        <div class="phone" data-18000="top:-1000px" data-18700="top:40px" data-20000="top:40px" data-20500="top:-600px">
+                        <div class="phone" data-18000="top:-1000px" data-18700="top:60px" data-20000="top:60px" data-20500="top:-600px">
                             <div class="magnifier" data-18700="opacity:0" data-19200="opacity:1" data-20000="opacity:1" data-20500="opacity:0"></div>
                         </div>
                         <div class="magnified" data-18700="opacity:0" data-19200="opacity:1" data-20000="opacity:1" data-20500="opacity:0"></div>
@@ -188,7 +188,7 @@ get_header(); ?>
                 </article>
                 <article class="slice slice-11 ui ui-7" data-19500="" data-22500="">
                     <div class="entry-content">
-                        <div class="text center" data-20000="top:1000px" data-20700="top:40px" data-22000="top:40px" data-22500="top:-600px">
+                        <div class="text center" data-20000="top:1000px" data-20700="top:60px" data-22000="top:60px" data-22500="top:-600px">
                             <h2 class="green drop-shadow fs-42">Content navigate</h2>
                             <p class="white drop-shadow">
                                 navigate content easily via browsing similar titles or releases from the same artist.
@@ -215,7 +215,7 @@ get_header(); ?>
                 </article>
                 <article class="slice slice-13" data-24500="" data-27500="">
                     <div class="entry-content">
-                        <h2 class="white drop-shadow center smoothly" data-24500="top: 1000px" data-25200="top:40px" data-26300="top:40px" data-27500="top:-600px">
+                        <h2 class="white drop-shadow center smoothly" data-24500="top: 1000px" data-25200="top:60px" data-26300="top:60px" data-27500="top:-600px">
                             Smoothly integrated payment system: <br/>
                             Pay and get paid for your own online content
                         </h2>
@@ -236,7 +236,7 @@ get_header(); ?>
                 </article>
                 <article class="slice slice-14" data-26500="" data-29500="">
                     <div class="entry-content">
-                        <h2 class="white drop-shadow center" data-27000="top:1000px" data-27700="top:40px" data-29000="top:40px" data-29400="top:-600px">
+                        <h2 class="white drop-shadow center" data-27000="top:1000px" data-27700="top:60px" data-29000="top:60px" data-29400="top:-600px">
                             Follow your favorite artists without third party intervention
                         </h2>
                         <div class="left" data-27700="left:-1000px" data-28400="left:0px" data-29200="top:200px" data-29500="top:-600px">
@@ -259,7 +259,7 @@ get_header(); ?>
                 </article>
                 <article class="slice slice-15" data-28500="" data-31500="">
                     <div class="entry-content">
-                        <h2 class="white drop-shadow" data-28900="top:1000px" data-29600="top:40px" data-31000="top:40px" data-31400="top:-600px">
+                        <h2 class="white drop-shadow" data-28900="top:1000px" data-29600="top:60px" data-31000="top:60px" data-31400="top:-600px">
                             An Artist yourself?<br/>
                             A budding independent film maker<br/>
                             or creative musician?
@@ -287,7 +287,7 @@ get_header(); ?>
                 </article>
                 <article class="slice slice-16" data-30500="" data-33500="">
                     <div class="entry-content">
-                        <div class="text" data-31500="top:1000px" data-32200="top:40px">
+                        <div class="text" data-31500="top:1000px" data-32200="top:60px">
                             <h2 class="white drop-shadow">The ability to make all of your viewing activities private:</h2>
                             <h3 class="white drop-shadow">You have the ability to share your content and social network with only those you choose. Nothing is shared unless you choose to.</h3>
                         </div>

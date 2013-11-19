@@ -958,7 +958,7 @@ img.wp-smiley,
     display: none;
     position: fixed;
     width: 100%;
-    top: 108px;
+    top: 130px;
     background: #adbf7f;
     height: 60px;
     border-bottom: 7px solid #74824e;
@@ -968,7 +968,7 @@ img.wp-smiley,
     width: 1000px;
     margin: 0 auto;
     height: 100%;
-    padding-left: 150px;
+    padding-left: 90px;
 }
 .secondary-nav-menu li.current_page_item a:after {
     border-top: 24px solid #74824e;
@@ -980,7 +980,11 @@ img.wp-smiley,
     content: "";
     margin: 0 auto;
 }
+.secondary-nav-menu li:first-child {
+    min-width:60px;
+}
 .secondary-nav-menu li {
+    text-align: center;
     list-style: none;
     height: 100%;
     display: inline-block;
