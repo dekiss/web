@@ -863,6 +863,7 @@ img.wp-smiley,
 	margin: 0 auto;
 	height: 100%;
 	clear: both;
+    position: relative;
 }
 
 .header-content .hot-links {
@@ -1023,6 +1024,16 @@ div.nav-menu > ul {
 .nav-menu li.current_page_item,
 .nav-menu li.current-page-ancestor {
 	background: url('images/top-menu-active-bg1.png') no-repeat scroll center bottom ;
+}
+
+.menu-item-highlighter {
+    background: url('images/top-menu-active-bg1.png') no-repeat scroll center bottom ;
+    width: 60px;
+    height: 16px;
+    position: absolute;
+    bottom:10px;
+    left:260px;
+    display: none;
 }
 
 .nav-menu li a {

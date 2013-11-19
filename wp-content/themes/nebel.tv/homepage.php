@@ -62,7 +62,7 @@ get_header(); ?>
 					</div><!-- .entry-content -->
 
 				</article><!-- #post -->
-                <article class="slice-2 slice" data-500-start="" data-3500="">
+                <article class="slice-2 slice" data-500="" data-3500="">
                     <div class="entry-content">
                         <div class="media-sharing" data-700="top:1000px" data-1500="top:0px" data-2300="top:0px" data-3100="top:-600px">
                             <h2 class="green drop-shadow">Media sharing</h2>
@@ -307,6 +307,5 @@ get_header(); ?>
                 </article>
 		</div><!-- #content -->
 	</div><!-- #primary -->
-
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>
