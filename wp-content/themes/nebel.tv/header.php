@@ -41,7 +41,7 @@
 			<div class="header-content">
                 <?php if(is_front_page()):?>
                     <div class="menu-item-highlighter" data-700="display:none"
-                         data-1500="display:block" data-2300="left:260px" data-2500="left:435px" data-5300="left:435px" data-5500="left:605px" data-7300="left:605" data-7500="left:763px"></div>
+                         data-1500="display:block" data-2300="left:266px" data-2500="left:435px" data-5300="left:435px" data-5500="left:605px" data-7300="left:605" data-7500="left:763px"></div>
                 <?php endif?>
 				<a class="home-link" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
 					<h1 class="site-title"><?php bloginfo( 'name' ); ?></h1>

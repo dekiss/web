@@ -1023,7 +1023,7 @@ div.nav-menu > ul {
 
 .nav-menu li.current_page_item,
 .nav-menu li.current-page-ancestor {
-	background: url('images/top-menu-active-bg1.png') no-repeat scroll center bottom ;
+	/*background: url('images/top-menu-active-bg1.png') no-repeat scroll center bottom ;*/
 }
 
 .menu-item-highlighter {
