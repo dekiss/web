@@ -279,6 +279,20 @@
             }, 1000);
         });
 
+        $('.hot-links a.menu').on('click', function(event) {
+            if($('.pages-menu').is('visible')) {
+                $('.pages-menu').hide();
+            } else {
+                $('.pages-menu').show();
+                $('body').one('click', function(event) {
+                    if($('.pages-menu').is('visible'))
+                        $('.pages-menu').hide();
+
+                });
+            }
+            event.preventDefault();
+        });
+
 
         $('.side-menu-buttons a').each(function(key, item) {
             $(this).on('click', function(event) {

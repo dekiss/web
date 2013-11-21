@@ -42,21 +42,22 @@ get_header(); ?>
                         </div>
                         <div class="homepage-figure-content hidden homepage-step-1">
                             <div class="item tv active">
-                                <p>Cutting edge <span class="">technology</span> allows access to <span class="">media</span></p>
+                                <p>Nebel.TV’s <span class="">design</span> allows you access to <span class="">your media</span> wishes all in one place.</p>
                                 <img src="/wp-content/themes/nebel.tv/images/tv-big.png" alt="tv" width="477" height="307"/>
                             </div>
                             <div class="item usb">
-                                <p>Some cool <span class="green">text</span> about the <span class="green">USB</span></p>
+                                <p>Cutting edge <span class="green">technology</span>, share <span class="green">Whatever, Whenever, Wherever.</span></p>
                                 <img src="/wp-content/themes/nebel.tv/images/usb-big.png" alt="usb" widh="477" height="165"/>
                             </div>
                             <div class="item phone">
-                                <p>Some cool <span class="green">text</span> about the <span class="green">phone</span></p>
+                                <p>Perfect playback, <span class="green">no matter</span> the size of <span class="green">your device</span> or bandwidth restrictions.</p>
                                 <img src="/wp-content/themes/nebel.tv/images/phone-big.png" alt=""/></div>
                             <div class="item tablet">
-                                <p>Some cool <span class="green">text</span> about the <span class="green">tablet</span></p>
+                                <p>True mobile <span class="green">access</span> to your media for <span class="green">when you’re </span>out and about.</p>
                                 <img src="/wp-content/themes/nebel.tv/images/tablet-big.png" alt=""/></div>
                             <div class="item device">
-                                <p>Some cool <span class="green">text</span> about the <span class="green">device</span></p>
+
+                                <p>Connect <span class="green">your HDMI</span> enabled device and <span class="green">experience the pleasure</span> on your TV.</p>
                                 <img src="/wp-content/themes/nebel.tv/images/device-big.png" alt=""/></div>
                         </div>
 					</div><!-- .entry-content -->

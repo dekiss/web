@@ -59,6 +59,7 @@
                     <ul>
                         <li><a href="#" class="info">Info</a></li>
                         <li><a href="#" class="mail">Mail</a></li>
+                        <li><a href="#" class="menu">&#x25BC;</a></li>
                     </ul>
                 </div>
 			</div>
