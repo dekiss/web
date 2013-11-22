@@ -886,7 +886,17 @@ img.wp-smiley,
     text-indent: -999px;
     height: 28px;
     width: 28px;
+    text-decoration: none;
 }
+
+.header-content .hot-links li a.menu {
+    text-indent: 0;
+    color: #000;
+    font-size: 11px;
+    text-align: center;
+    line-height: 30px;
+}
+
 .header-content .hot-links li a.info {
     background: url('images/info-img.png') no-repeat scroll 50% center;
 }
@@ -1045,7 +1055,7 @@ div.nav-menu > ul {
 	display: block;
 	font-size: 20px;
 	line-height: 1;
-	padding: 15px 20px;
+	padding: 15px;
 	text-decoration: none;
 }
 
