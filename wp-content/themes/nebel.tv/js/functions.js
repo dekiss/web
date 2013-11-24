@@ -432,8 +432,10 @@
         }
         placeToCenter($('.homepage-step-1'));
 
-        homepage_effects();
-        var s = skrollr.init();
+        if($.browser.mobile !== true){
+            homepage_effects();
+            var s = skrollr.init();
+        }
     });
 
 } )( jQuery );
