@@ -86,13 +86,17 @@
         $('.menu-secondary-menu-container').show();
     }
 
-
-    if(is_homepage){
-    	$('#menu-top-menu, #menu-side-menu-buttons').delegate('a', 'click', function(event){
-    		event.preventDefault();
-    		return false;
-    	});
+    try {
+        if(is_homepage){
+            $('#menu-top-menu, #menu-side-menu-buttons').delegate('a', 'click', function(event){
+                event.preventDefault();
+                return false;
+            });
+        }
+    } catch(err) {
+        $('#main').css({position: 'static'});
     }
+
     $('.homepage-figure .item a').on('click', function(event) {
         event.preventDefault();
         $(this).parent().siblings().removeClass('active');
