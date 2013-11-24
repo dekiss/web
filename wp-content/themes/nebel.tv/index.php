@@ -20,15 +20,16 @@ get_header(); ?>
     <div id="content" class="site-content" role="main">
         <article class="blog">
             <div class="entry-holder content-scroll">
-                    <h1 class="entry-title black bold uppercase">Nebel.tv blog</h1>
+                <h1 class="entry-title black bold uppercase">Nebel.tv blog</h1>
                 <div class="entry-content">
                     <ul class="posts">
                         <?php while ( have_posts() ) : the_post(); ?>
                             <li id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
                                 <?php nebeltv_entry_date(); ?>
                                 <div class="post-preview">
-                                    <h2 class="post-title greener"><?php the_title(); ?></h2>
-                                    <?php the_content(); ?>
+                                    <h2 class="post-title"><a class="greener" href="<?php echo get_permalink(get_the_ID())?>"><?php the_title(); ?></a></h2>
+<!--                                    --><?php //the_content(); ?>
+                                    <?php the_excerpt(); ?>
                                     <?php wp_link_pages( array( 'before' => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'twentythirteen' ) . '</span>', 'after' => '</div>', 'link_before' => '<span>', 'link_after' => '</span>' ) ); ?>
                                 </div><!-- .entry-content -->
                                 <?php if ( has_post_thumbnail() && ! post_password_required() ) : ?>

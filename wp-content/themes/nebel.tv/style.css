@@ -2104,6 +2104,7 @@ footer.entry-meta {
 	font-style: italic;
 	font-weight: 300;
 	padding: 20px 0;
+    margin-bottom: 20px;
 }
 
 .post-navigation .nav-links {
@@ -4134,4 +4135,21 @@ article.slice {
     width: 100%;
     position: absolute;
     padding: 0 200px;
+}
+
+.slice-1 {
+    overflow: hidden;
+    min-height: 650px;
+}
+
+.entry-content .post-title a:hover,
+.entry-content .post-title a {
+    color: #8ca156;
+}
+
+/*mobile*/
+@media only screen and (max-width: 460px) {
+    .site-header .home-link {
+        display: none;
+    }
 }
