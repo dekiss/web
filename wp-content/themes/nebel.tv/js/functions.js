@@ -120,6 +120,13 @@
     	});
     });
 
+    $('.site-header .menu-link-holder a').on('click', function(event){
+        $('.menu-high-level-container').animate({width: 'toggle', duration:500});
+        $('#page').toggleClass('high-menu-active', 500);
+        event.preventDefault();
+        return false;
+    });
+
     function defineRotationDegrees(obj, abs) {
     	return  function(obj) {
     		return getRotationDegrees(obj, abs);

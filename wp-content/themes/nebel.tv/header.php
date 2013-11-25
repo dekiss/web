@@ -36,6 +36,8 @@
 </head>
 
 <body <?php body_class(); ?>>
+<div class="top-container">
+<?php wp_nav_menu( array('theme_location' => 'high', 'menu_class' => 'nav-menu'));?>
 	<div id="page" class="hfeed site">
 		<header id="masthead" class="site-header" role="banner">
 			<div class="header-content">
@@ -51,7 +53,6 @@
 					<nav id="site-navigation" class="navigation main-navigation" role="navigation">
 						<?php
                             if(is_front_page()) { wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ) );}
-                            else wp_nav_menu( array('theme_location' => 'high', 'menu_class' => 'nav-menu'));
                         ?>
 					</nav><!-- #site-navigation -->
 				</div><!-- #navbar -->
@@ -63,6 +64,10 @@
                 </div>
 			</div>
             <?php wp_nav_menu( array( 'theme_location' => 'secondary', 'menu_class' => 'secondary-nav-menu' ) ); ?>
+
+            <div class="menu-link-holder">
+                <a href="#">Menu</a>
+            </div>
 
 		</header><!-- #masthead -->
 

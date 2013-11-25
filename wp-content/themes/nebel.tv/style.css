@@ -866,13 +866,33 @@ img.wp-smiley,
     position: relative;
 }
 
+.site-header .menu-link-holder {
+    position: absolute;
+    border-radius: 5px;
+    border: 6px solid #aabc7b;
+    text-align: center;
+    top:33px;
+    left: 3%;
+}
+
+.site-header .menu-link-holder a {
+    display: block;
+    overflow: hidden;
+    text-indent: -999px;
+    width: 28px;
+    height: 28px;
+    background: url('images/icon_menu.png') no-repeat center center;
+}
+
 .header-content .hot-links {
     float: right;
 }
+
 .header-content .hot-links ul {
     margin: 33px 0 0;
     padding: 0;
 }
+
 .header-content .hot-links li {
     display: inline-block;
     list-style: none;
@@ -880,6 +900,7 @@ img.wp-smiley,
     border: 6px solid #aabc7b;
     margin-left: 17px;
 }
+
 .header-content .hot-links li a {
     display: block;
     overflow: hidden;
@@ -931,6 +952,24 @@ img.wp-smiley,
 	font: 300 italic 24px "Source Sans Pro", Helvetica, sans-serif;
 	margin: 0;
 }
+/*highest menu*/
+.menu-high-level-container.active {
+    display:block;
+}
+.menu-high-level-container {
+    display:none;
+    width: 300px;
+    height:100%;
+    position:fixed;
+    top:0;
+    left:0;
+    background: #eee;
+}
+
+.menu-top-menu-container {
+    margin: 27px 0 0 20px;
+}
+
 
 .side-menu-buttons li {
     list-style: none;
@@ -1119,10 +1158,6 @@ ul.nav-menu li:hover > ul,
 /* Navbar */
 .navbar {
 	float: left;
-}
-
-.menu-top-menu-container, .menu-high-level-container {
-	margin: 27px 0 0 20px;
 }
 
 .site-header .search-form {
@@ -4147,9 +4182,37 @@ article.slice {
     color: #8ca156;
 }
 
+#page.high-menu-active {
+    margin-left:300px;
+}
+
 /*mobile*/
-@media only screen and (max-width: 460px) {
+@media only screen and (max-width: 480px) {
     .site-header .home-link {
         display: none;
     }
+}
+
+@media only screen and (max-width: 600px) {
+
+}
+
+@media only screen and (max-width: 768px) {
+
+}
+
+@media only screen and (max-width: 992px) {
+
+}
+
+@media only screen and (min-width: 1382px) {
+
+}
+
+.top-container {
+    height:100%;
+    width: 100%;
+    position: relative;
+    clear: both;
+    overflow:hidden;
 }
