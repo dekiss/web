@@ -4262,7 +4262,7 @@ article.slice {
     }
 
     #content .entry-header, #content .entry-content {
-        padding: 0 3%;
+        padding: 0 2%;
     }
 
     .none {
@@ -4295,8 +4295,8 @@ article.slice {
         height: 280px;
         width: 100%;
     }
-    .slice-2, .slice-3, .slice-4 /*, .slice-5,*/
-    /*.slice-6, .slice-7, .slice-8, .slice-9,*/
+    .slice-2, .slice-3, .slice-4, .slice-5,
+    .slice-6, .slice-7/*, .slice-8, .slice-9,*/
     /*.slice-10, .slice-11, .slice-12, .slice-13,*/
     /*.slice-14, .slice-15, .slice-16 */ {
         display: block;
@@ -4373,6 +4373,44 @@ article.slice {
         width: 100%;
     }
 
+    .ui-1 .text, .ui-2 .text, .ui-3 .text {
+        position: static;
+        padding: 0;
+    }
+
+    .ui-1 .tv {
+        position: static;
+        background: url('images/ui-tv-480.png') no-repeat center bottom;
+        height: 193px;
+        width: 100%;
+    }
+
+    .ui-1 .magnifier,
+    .ui-1 .magnified,
+    .ui-2 .magnifier,
+    .ui-2 .magnified,
+    .ui-3 .magnifier,
+    .ui-3 .magnified {
+        display: none;
+    }
+
+    .ui-2 .device {
+        background: url('images/tablet-magnifee-480.png') no-repeat center bottom;
+        width: 100%;
+        height: 202px;
+        position: static;
+    }
+
+    .ui-3 p {
+        text-align: center;
+    }
+
+    .ui-3 .phone {
+        position: static;
+        background: url('images/telephone-480.png') no-repeat scroll center bottom;
+        width: 100%;
+        height: 378px;
+    }
 
 }
 
