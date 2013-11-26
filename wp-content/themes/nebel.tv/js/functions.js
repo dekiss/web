@@ -120,9 +120,32 @@
     	});
     });
 
-    $('.site-header .menu-link-holder a').on('click', function(event){
-        $('.menu-high-level-container').animate({width: 'toggle', duration:500});
-        $('#page').toggleClass('high-menu-active', 500);
+    $('.site-header .menu-link-holder a').on('click', function(event) {
+        if(!$(this).data('animated')) {
+            $({val: 0}).animate({val: 300}, {
+                duration: 400,
+                easing: 'linear',
+                step: function(now) {
+                    $('.menu-high-level-container').css({width: now+'px'});
+                    $('#page').css({'margin-left': now+'px'})
+                },
+                complete: function() {
+                    $('.site-header .menu-link-holder a').data('animated', true);
+                }
+            });
+        } else {
+            $({val: 300}).animate({val: 0}, {
+                duration: 400,
+                easing: 'linear',
+                step: function(now) {
+                    $('.menu-high-level-container').css({width: now+'px'});
+                    $('#page').css({'margin-left': now+'px'})
+                },
+                complete: function() {
+                    $('.site-header .menu-link-holder a').data('animated', false);
+                }
+            });
+        }
         event.preventDefault();
         return false;
     });

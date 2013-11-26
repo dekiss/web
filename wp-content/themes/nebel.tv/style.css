@@ -953,14 +953,11 @@ img.wp-smiley,
 	margin: 0;
 }
 /*highest menu*/
-.menu-high-level-container.active {
-    display:block;
-}
 .menu-high-level-container {
-    display:none;
-    width: 300px;
+    width: 0px;
     height:100%;
     position:fixed;
+    overflow: hidden;
     top:0;
     left:0;
     background: #eee;
