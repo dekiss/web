@@ -4183,10 +4183,109 @@ article.slice {
     margin-left:300px;
 }
 
-/*mobile*/
+/* mobile portrait */
+
+/* mobile landscape */
 @media only screen and (max-width: 480px) {
     .site-header .home-link {
         display: none;
+    }
+
+    .site-header .header-content {
+        width: 100%;
+    }
+
+
+    .site-header {
+        height: 60px;
+    }
+
+    #navbar {
+        display: none !important;
+    }
+
+    .site-header .menu-link-holder {
+        top: 17%;
+    }
+    .header-content .hot-links {
+        position: absolute;
+        top: 17%;
+        right:3%;
+    }
+
+    .header-content .hot-links ul {
+        margin: 0;
+    }
+
+    #content {
+        padding-top: 10px;
+        width: 100%;
+    }
+
+    .homepage-header h1 span.first-letter {
+        font-size: 30px;
+    }
+
+    .page h1 {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .site-main {
+        position: static;
+        padding-top: 60px;
+    }
+
+    .side-menu-buttons {
+        display: none;
+    }
+
+    .slice {
+        position: static;
+        min-height: 100%;
+    }
+
+    .hidden {
+        opacity: 1;
+    }
+
+    .first-letter.hidden {
+        margin-left: 0;
+    }
+
+    #content .entry-header, #content .entry-content {
+        padding: 0 3%;
+    }
+
+    .none {
+        display: block;
+    }
+
+    .entry-header {
+        margin-bottom: 10px;
+    }
+
+    .homepage-header .try-it-now {
+        background: url('images/try-it-now-480.png') no-repeat;
+        float: none;
+        width: 181px;
+        height: 52px;
+        display: block;
+        margin: 15px auto;
+    }
+
+    .homepage-step-1 {
+        display:none;
+    }
+
+    .phase-1, .phase-2, .phase-3, .phase-4, .phase-5 {
+        display:none;
+    }
+
+    .homepage-figure {
+        background: url('images/homepage-figure-480.png') no-repeat center center;
+        height: 280px;
+        width: 100%;
     }
 }
 
@@ -4194,14 +4293,17 @@ article.slice {
 
 }
 
+/* ipad portrait */
 @media only screen and (max-width: 768px) {
 
 }
 
+/* ipad landscape*/
 @media only screen and (max-width: 992px) {
 
 }
 
+/* desktop */
 @media only screen and (min-width: 1382px) {
 
 }

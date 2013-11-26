@@ -464,11 +464,12 @@
             var e_w = elem.width();
             elem.css('right', p_w / 2 - e_w /2);
         }
-        placeToCenter($('.homepage-step-1'));
 
-        if($.browser.mobile !== true){
+
+        if($.browser.mobile !== true && $(window).width() > 1000){
             homepage_effects();
             var s = skrollr.init();
+            placeToCenter($('.homepage-step-1'));
         }
     });
 
