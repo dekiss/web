@@ -4183,6 +4183,13 @@ article.slice {
     margin-left:300px;
 }
 
+.top-container {
+    height:100%;
+    width: 100%;
+    position: relative;
+    clear: both;
+    overflow:hidden;
+}
 /* mobile portrait */
 
 /* mobile landscape */
@@ -4243,6 +4250,7 @@ article.slice {
     .slice {
         position: static;
         min-height: 100%;
+        margin-bottom: 20px;
     }
 
     .hidden {
@@ -4287,6 +4295,45 @@ article.slice {
         height: 280px;
         width: 100%;
     }
+    .slice-2 /*, .slice-3, .slice-4, .slice-5,*/
+    /*.slice-6, .slice-7, .slice-8, .slice-9,*/
+    /*.slice-10, .slice-11, .slice-12, .slice-13,*/
+    /*.slice-14, .slice-15, .slice-16 */ {
+        display: block;
+    }
+
+    .top-container {
+        overflow: visible;
+    }
+
+    .slice h2 {
+        font-size: 36px;
+        margin-bottom: 5px;
+        text-align: center;
+    }
+
+    .slice p {
+        font-size: 18px;
+        font-family: open_sansregular;
+    }
+    .media-sharing {
+        position: static;
+        background: url('images/upload-download-480.png') no-repeat center bottom;
+        padding: 0;
+        top: 0;
+        height: 360px;
+        float: none;
+    }
+
+    .full-control {
+        float: none;
+        position: static;
+        height: 350px;
+        background: url('images/full-control-480.png') no-repeat center bottom;
+        padding: 0;
+        top: 0;
+        margin-top: 0;
+    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -4308,10 +4355,3 @@ article.slice {
 
 }
 
-.top-container {
-    height:100%;
-    width: 100%;
-    position: relative;
-    clear: both;
-    overflow:hidden;
-}
