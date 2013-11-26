@@ -4295,7 +4295,7 @@ article.slice {
         height: 280px;
         width: 100%;
     }
-    .slice-2 /*, .slice-3, .slice-4, .slice-5,*/
+    .slice-2, .slice-3 /*, .slice-4, .slice-5,*/
     /*.slice-6, .slice-7, .slice-8, .slice-9,*/
     /*.slice-10, .slice-11, .slice-12, .slice-13,*/
     /*.slice-14, .slice-15, .slice-16 */ {
@@ -4334,6 +4334,28 @@ article.slice {
         top: 0;
         margin-top: 0;
     }
+    .slice-3 h2, .slice-3 p {
+        padding: 0 12px;
+    }
+    .slice-3 h2, .slice-3 .missed p { text-align: left; }
+    .slice-3 .live-recorded {
+        position: static;
+        background: url('images/tv-480.png') no-repeat center bottom;
+        padding: 0 0 180px 0;
+        min-height: 260px;
+        margin-bottom: 10px;
+    }
+
+    .slice-3 .live-recorded-2, .slice-3 .live-recorded-3 {
+        display: none;
+    }
+
+    .slice-3 .missed {
+        position: static;
+        padding: 0;
+        background: none;
+    }
+
 }
 
 @media only screen and (max-width: 600px) {
