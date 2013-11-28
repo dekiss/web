@@ -868,8 +868,6 @@ img.wp-smiley,
 
 .site-header .menu-link-holder {
     position: absolute;
-    border-radius: 5px;
-    border: 6px solid #aabc7b;
     text-align: center;
     top:33px;
     left: 3%;
@@ -879,10 +877,11 @@ img.wp-smiley,
     display: block;
     overflow: hidden;
     text-indent: -999px;
-    width: 28px;
-    height: 28px;
-    background: url('images/icon_menu.png') no-repeat center center;
+    width: 36px;
+    height: 36px;
+    background: url('images/icon_menu_2.png') no-repeat center center;
 }
+
 
 .header-content .hot-links {
     float: right;
@@ -958,15 +957,40 @@ img.wp-smiley,
     height:100%;
     position:fixed;
     overflow: hidden;
+    padding-top: 120px;
     top:0;
     left:0;
-    background: #eee;
+    background: #adbf7f url('images/side-menu-bg.png') no-repeat center 5px;
+    box-shadow: inset -64px -32px 32px -32px rgba(0, 0, 0, .21);
 }
+
+.menu-high-level-container ul#menu-high-level {
+    height: auto;
+    padding-left: 10px;
+}
+
+.menu-high-level-container ul#menu-high-level li {
+    width: 100%;
+}
+.menu-high-level-container ul#menu-high-level li,
+.menu-high-level-container ul#menu-high-level li a {
+    color: #3d4528;
+    font-size: 22px;
+}
+
+.menu-high-level-container ul#menu-high-level li:before {
+    color: #3d4528;
+    float: left;
+    width: 30px;
+    line-height: 1em;
+    content: "\2022";
+    font-size:52px;
+}
+
 
 .menu-top-menu-container {
     margin: 27px 0 0 20px;
 }
-
 
 .side-menu-buttons li {
     list-style: none;
@@ -4298,6 +4322,25 @@ article.slice {
         height: 280px;
         width: 100%;
     }
+
+    .site-header .menu-link-holder a {
+        display: block;
+        overflow: hidden;
+        text-indent: -999px;
+        width: 28px;
+        height: 28px;
+        background: url('images/icon_menu.png') no-repeat center center;
+    }
+
+    .site-header .menu-link-holder {
+        position: absolute;
+        border-radius: 0;
+        border: none;
+        text-align: center;
+        top:33px;
+        left: 3%;
+    }
+
     .slice-2, .slice-3, .slice-4, .slice-5,
     .slice-6, .slice-7, .slice-8, .slice-9,
     .slice-10, .slice-11/*, .slice-12, .slice-13,*/

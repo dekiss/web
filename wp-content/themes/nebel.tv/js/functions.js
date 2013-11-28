@@ -122,24 +122,26 @@
 
     $('.site-header .menu-link-holder a').on('click', function(event) {
         if(!$(this).data('animated')) {
-            $({val: 0}).animate({val: 300}, {
+            $({val: 0}).animate({val: 340}, {
                 duration: 400,
                 easing: 'linear',
                 step: function(now) {
                     $('.menu-high-level-container').css({width: now+'px'});
                     $('#page').css({'margin-left': now+'px'})
+                    $('.side-menu-buttons').css({'left': now+'px'});
                 },
                 complete: function() {
                     $('.site-header .menu-link-holder a').data('animated', true);
                 }
             });
         } else {
-            $({val: 300}).animate({val: 0}, {
+            $({val: 340}).animate({val: 0}, {
                 duration: 400,
                 easing: 'linear',
                 step: function(now) {
                     $('.menu-high-level-container').css({width: now+'px'});
                     $('#page').css({'margin-left': now+'px'})
+                    $('.side-menu-buttons').css({'left': now+'px'});
                 },
                 complete: function() {
                     $('.site-header .menu-link-holder a').data('animated', false);
