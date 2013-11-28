@@ -4290,14 +4290,17 @@ article.slice {
         display:none;
     }
 
+    .homepage-figure .item {
+        display:none;
+    }
     .homepage-figure {
         background: url('images/homepage-figure-480.png') no-repeat center center;
         height: 280px;
         width: 100%;
     }
     .slice-2, .slice-3, .slice-4, .slice-5,
-    .slice-6, .slice-7/*, .slice-8, .slice-9,*/
-    /*.slice-10, .slice-11, .slice-12, .slice-13,*/
+    .slice-6, .slice-7, .slice-8, .slice-9,
+    .slice-10, .slice-11/*, .slice-12, .slice-13,*/
     /*.slice-14, .slice-15, .slice-16 */ {
         display: block;
     }
@@ -4373,7 +4376,10 @@ article.slice {
         width: 100%;
     }
 
-    .ui-1 .text, .ui-2 .text, .ui-3 .text {
+    .ui-1 .text, .ui-2 .text,
+    .ui-3 .text, .ui-4 .text,
+    .ui-5 .text, .ui-6 .text,
+    .ui-7 .text {
         position: static;
         padding: 0;
     }
@@ -4390,7 +4396,15 @@ article.slice {
     .ui-2 .magnifier,
     .ui-2 .magnified,
     .ui-3 .magnifier,
-    .ui-3 .magnified {
+    .ui-3 .magnified,
+    .ui-4 .magnifier,
+    .ui-4 .magnified,
+    .ui-5 .magnifier,
+    .ui-5 .magnified,
+    .ui-6 .magnifier,
+    .ui-6 .magnified,
+    .ui-7 .magnifier,
+    .ui-7 .magnified {
         display: none;
     }
 
@@ -4412,6 +4426,45 @@ article.slice {
         height: 378px;
     }
 
+    .ui-4 .tv {
+        position: static;
+        background: url('images/tv-2-480.png') no-repeat scroll center bottom;
+        width: 100%;
+        height: 195px;
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+
+    .ui-5 .tablet-sad {
+        position: static;
+        background: url('images/tablet-magnifee-2-480.png') no-repeat center bottom;
+        width: 100%;
+        height: 203px;
+        margin: 60px 0;
+    }
+
+    .ui-6 .phone {
+        position: static;
+        width: 100%;
+        background: url('images/ui6_res_320-480.png') no-repeat center bottom;
+        height: 378px;
+    }
+
+    .ui-6 .text {
+        text-align: center;
+        padding: 0 10px;
+    }
+
+    .ui-7 .tv {
+        position: static;
+        width: 100%;
+        background: url('images/tv-magnifee-3-480.png') no-repeat center bottom;
+        height: 205px;
+        margin: 10px 0 30px 0;
+    }
+    .ui-7 .text p {
+        padding: 0 10px;
+    }
 }
 
 @media only screen and (max-width: 600px) {
