@@ -17,7 +17,7 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<div id="content" class="site-content" role="main">
 
-				<article class="slice-1 slice" data-500="position:abosolute;top:20px;" data-1500="top: -600px;">
+				<article class="slice-1 slice" data-500="position:abosolute;top:20px;" data-1500="top: -700px;">
 					<header class="entry-header homepage-header">
 						<h1 class="entry-title">
                             <span class="first-letter hidden">W</span><span class="hidden">hatever you want.&nbsp;&nbsp;</span>
