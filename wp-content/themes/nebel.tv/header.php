@@ -37,7 +37,12 @@
 
 <body <?php body_class(); ?>>
 <div class="top-container">
-<?php wp_nav_menu( array('theme_location' => 'high', 'menu_class' => 'nav-menu'));?>
+    <a class="home-link" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
+        <h1 class="site-title"><?php bloginfo( 'name' ); ?></h1>
+        <!-- <h2 class="site-description"><?php bloginfo( 'description' ); ?></h2> -->
+    </a>
+
+    <?php wp_nav_menu( array('theme_location' => 'high', 'menu_class' => 'nav-menu'));?>
 	<div id="page" class="hfeed site">
 		<header id="masthead" class="site-header" role="banner">
 			<div class="header-content">
@@ -45,10 +50,6 @@
                     <div class="menu-item-highlighter" data-700="display:none"
                          data-1500="display:block" data-2300="left:266px" data-2500="left:435px" data-5300="left:435px" data-5500="left:605px" data-7300="left:605" data-7500="left:763px"></div>
                 <?php endif?>
-				<a class="home-link" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
-					<h1 class="site-title"><?php bloginfo( 'name' ); ?></h1>
-					<!-- <h2 class="site-description"><?php bloginfo( 'description' ); ?></h2> -->
-				</a>
 				<div id="navbar" class="navbar">
 					<nav id="site-navigation" class="navigation main-navigation" role="navigation">
 						<?php
