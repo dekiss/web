@@ -4256,9 +4256,20 @@ article.slice {
     clear: both;
     overflow:hidden;
 }
-/* mobile portrait */
 
-/* mobile landscape */
+.static_page #content {
+   width: 90%;
+}
+
+.static_page .entry-holder {
+    width: 100%;
+}
+.static_page .entry-holder .entry-content{
+    width: 100%;
+    max-width: none;
+}
+
+/* mobile portrait, mobile landscape */
 @media only screen and (max-width: 480px) {
     .top-container .home-link {
         display: none;
@@ -4712,4 +4723,3 @@ article.slice {
 @media only screen and (min-width: 1382px) {
 
 }
-

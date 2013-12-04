@@ -10,7 +10,7 @@ Template Name: Simple page
 
 get_header(); ?>
 
-    <div id="primary" class="content-area">
+    <div id="primary" class="content-area static_page">
         <div id="content" class="site-content" role="main">
             <article class="page">
                 <div class="entry-holder content-scroll">
