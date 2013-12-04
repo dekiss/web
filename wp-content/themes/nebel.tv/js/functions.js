@@ -486,11 +486,14 @@
 
 
         if($.browser.mobile !== true && $(window).width() > 1000){
-            $('.menu-secondary-menu-container').attr('data-7000', 'top: 1000px');
-            $('.menu-secondary-menu-container').attr('data-7500', 'top: 101px');
-            homepage_effects();
-            var s = skrollr.init();
-            placeToCenter($('.homepage-step-1'));
+            if(typeof is_homepage !== 'undefined') {
+                $('.menu-secondary-menu-container').show();
+                $('.menu-secondary-menu-container').attr('data-7500', 'top: 101px');
+                $('.menu-secondary-menu-container').attr('data-7000', 'top: 1000px');
+                homepage_effects();
+                var s = skrollr.init();
+                placeToCenter($('.homepage-step-1'));
+            }
         }
     });
 
