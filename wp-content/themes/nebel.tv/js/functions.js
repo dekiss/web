@@ -101,9 +101,13 @@
         event.preventDefault();
         $(this).parent().siblings().removeClass('active');
         $(this).parent().addClass('active');
+        var target = $(this).attr('data-target');
+        $('.homepage-figure-content .item.active').hide('fade', {duration: 100, complete:function() {
+            $(this).removeClass('active');
 
-        $('.homepage-figure-content .item').removeClass('active');
-        $('.homepage-figure-content .'+$(this).attr('data-target')).addClass('active');
+            $('.homepage-figure-content .'+target).show('fade', {duration: 500});
+            $('.homepage-figure-content .'+target).addClass('active');
+        }});
     });
     $('.homepage-figure .item a').each(function(key, item) {
     	$(this).on('click', function() {
@@ -438,18 +442,22 @@
                 $('.homepage-figure .item.active').removeClass('active');
                 $('.homepage-figure .item.phone').addClass('active');
 
-                $('.homepage-figure-content .item').removeClass('active', 300);
-                $('.homepage-figure-content .phone').addClass('active', 500);
+                $('.homepage-figure-content .item.active').hide('fade', 100);
+                $('.homepage-figure-content .item').removeClass('active');
+                $('.homepage-figure-content .phone').show('fade', 500);
+                $('.homepage-figure-content .phone').addClass('active');
                 setTimeout(next, 2000);
             },
             function() {
                 $('.homepage-figure').animateRotate(72, 144, 500, 'linear');
                 $('.homepage-figure .item').animateRotate(-72, -144, 500, 'linear');
-                $('.homepage-figure .item.active').removeClass('active', 100);
-                $('.homepage-figure .item.tablet').addClass('active', 100);
+                $('.homepage-figure-content .item.active').hide('fade', 100);
+                $('.homepage-figure .item.active').removeClass('active');
+                $('.homepage-figure .item.tablet').addClass('active');
 
-                $('.homepage-figure-content .item').removeClass('active', 300);
-                $('.homepage-figure-content .tablet').addClass('active', 500);
+                $('.homepage-figure-content .item').removeClass('active');
+                $('.homepage-figure-content .tablet').show('fade', 500);
+                $('.homepage-figure-content .tablet').addClass('active');
                 setTimeout(next, 2000);
             },
             function() {
@@ -458,8 +466,10 @@
                 $('.homepage-figure .item.active').removeClass('active', 100);
                 $('.homepage-figure .item.device').addClass('active', 100);
 
+                $('.homepage-figure-content .item.active').hide('fade', 100);
                 $('.homepage-figure-content .item').removeClass('active', 300);
-                $('.homepage-figure-content .device').addClass('active', 500);
+                $('.homepage-figure-content .device').show('fade', 500);
+                $('.homepage-figure-content .device').addClass('active');
                 setTimeout(next, 2000);
             },
             function() {
@@ -468,17 +478,21 @@
                 $('.homepage-figure .item.active').removeClass('active', 100);
                 $('.homepage-figure .item.usb').addClass('active', 100);
 
-                $('.homepage-figure-content .item').removeClass('active', 300);
+                $('.homepage-figure-content .item.active').hide('fade', 100);
+                $('.homepage-figure-content .item').removeClass('active');
+                $('.homepage-figure-content .usb').show('fade', 500);
                 $('.homepage-figure-content .usb').addClass('active', 500);
                 setTimeout(next, 2000);
             },
             function() {
                 $('.homepage-figure').animateRotate(288, 360, 500, 'linear');
                 $('.homepage-figure .item').animateRotate(-288, -360, 500, 'linear');
-                $('.homepage-figure .item.active').removeClass('active', 100);
-                $('.homepage-figure .item.tv').addClass('active', 100);
+                $('.homepage-figure .item.active').removeClass('active');
+                $('.homepage-figure .item.tv').addClass('active');
 
-                $('.homepage-figure-content .item').removeClass('active', 300);
+                $('.homepage-figure-content .item.active').hide('fade', 100);
+                $('.homepage-figure-content .item').removeClass('active');
+                $('.homepage-figure-content .tv').show('fade', 500);
                 $('.homepage-figure-content .tv').addClass('active', 500);
                 setTimeout(next, 2000);
             },
