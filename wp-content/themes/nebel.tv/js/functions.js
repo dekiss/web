@@ -138,6 +138,9 @@
                     do_anim(now + 'px');
                 },
                 complete: function() {
+                    $('.tv-set.green').fadeOut(400);
+                    $('.tv-set.brown').fadeIn(400);
+
                     $('.site-header .menu-link-holder a').data('animated', true);
                 }
             });
@@ -150,6 +153,10 @@
                         do_anim(now + 'px');
                     },
                     complete: function() {
+                        $('.tv-set.brown').fadeOut(400);
+                        $('.tv-set.green').fadeIn(400);
+
+
                         $('.site-header .menu-link-holder a').data('animated', false);
                     }
                 });
@@ -162,6 +169,8 @@
                     do_anim(now + 'px');
                 },
                 complete: function() {
+                    $('.tv-set.brown').fadeOut(400);
+                    $('.tv-set.green').fadeIn(400);
                     $('.site-header .menu-link-holder a').data('animated', false);
                 }
             });
