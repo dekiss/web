@@ -106,7 +106,7 @@ body {
 	line-height: 1.5;
 	margin: 0;
 	/*background: url('images/bg_light.png') repeat;*/
-	background: url('images/bg_dark.png') repeat;
+	background: url('images/bg_dark_l.jpg') repeat;
 	/*background: url('images/body-bg.png') repeat;*/
 }
 
@@ -935,16 +935,32 @@ img.wp-smiley,
 	overflow: hidden;
 	text-decoration: none;
 	text-indent: -9999px;
-	background: url('images/headers/logo.png') no-repeat scroll left 15px;
-	background-size: auto 70px;
+	background: url('images/headers/nebel_tv.png') no-repeat scroll left 15px;
+	/*background-size: auto 70px;*/
 	float: left;
-	width: 190px;
+	width: 200px;
     position: fixed;
     left: 9%;
     top: 0;
     z-index: 9999;
 }
 
+.tv-set{
+    background: url('images/headers/tv2.png') no-repeat center;
+
+    position: absolute;
+    height: 110px;
+    width: 200px;
+}
+.tv-set.green{
+    background: url('images/headers/tv2.png') no-repeat center;
+
+}
+.tv-set.brown{
+    background: url('images/headers/tv1.png') no-repeat center;
+    display: none;
+
+}
 .site-header .site-title:hover {
 	text-decoration: underline;
 }

@@ -38,6 +38,8 @@
 <body <?php body_class(); ?>>
 <div class="top-container">
     <a class="home-link" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
+         <div class="tv-set green"> </div>
+        <div class="tv-set brown"> </div>
         <h1 class="site-title"><?php bloginfo( 'name' ); ?></h1>
         <!-- <h2 class="site-description"><?php bloginfo( 'description' ); ?></h2> -->
     </a>
