@@ -286,21 +286,21 @@ get_header(); ?>
                         </div>
                     </div>
                 </article>
-                <article class="slice slice-16" data-30500="" data-33500="">
+               <article class="slice slice-16" data-30500="" data-33500="">
                     <div class="entry-content">
-                        <div class="text" data-31500="top:1000px" data-32200="top:60px">
+                        <div class="text" data-31500="top:1000px" data-32200="top:60px" data-34300="top:60px" data-34700="top:-300px">
                             <h2 class="white drop-shadow">The ability to make all of your viewing activities private:</h2>
                             <h3 class="white drop-shadow">You have the ability to share your content and social network with only those you choose. Nothing is shared unless you choose to.</h3>
                         </div>
-                        <div class="left" data-32200="opacity:0" data-32700="opacity:1">
+                        <div class="left" data-32200="opacity:0" data-32700="opacity:1" data-34300="top:280px" data-35000="top:-300px">
                             <p class="green">
-                                <img src="/wp-content/themes/nebel.tv/images/security-1.png" width="204" height="183"/><br/>
+                                <img src="wp-content/themes/nebel.tv/images/security-1.png" height="183"/><br/>
                                 Share your content with one friend or group. Nobody is able to pick in!
                             </p>
                         </div>
-                        <div class="right" data-32200="opacity:0" data-32700="opacity:1">
+                        <div class="right" data-32200="opacity:0" data-32700="opacity:1" data-34300="top:280px" data-35000="top:-300px">
                             <p class="green">
-                                <img src="/wp-content/themes/nebel.tv/images/security-2.png" width="196" height="183"/> <br/>
+                                <img src="wp-content/themes/nebel.tv/images/security-2.png" height="183"/> <br/>
                                 Make your social network private: no one except you can analyze and monetize your network.
                             </p>
                         </div>
